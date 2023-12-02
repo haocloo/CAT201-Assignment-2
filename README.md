@@ -14,8 +14,14 @@
 
 ### First time setup
 ```bash
-git clone https://github.com/haocloo/CAT201-Assignment-1.git
-cd CAT201-Assignment-1
+git clone https://github.com/haocloo/CAT201-Assignment-2.git
+cd CAT201-Assignment-2
+```
+
+### Start development server
+```bash
+npm install
+npm run dev
 ```
 
 ### Create your branch (naming example : lch/module-name)

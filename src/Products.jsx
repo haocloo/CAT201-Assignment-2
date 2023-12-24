@@ -1,9 +1,23 @@
-import Product1 from "./assets/images/Products/Product1.png";
-import Product2 from "./assets/images/Products/Product2.png";
-import Product3 from "./assets/images/Products/Product3.png";
-import Product4 from "./assets/images/Products/Product4.png";
+import Product1 from "./assets/images/Products/Product1.jpeg";
+import Product2 from "./assets/images/Products/Product2.jpeg";
+import Product3 from "./assets/images/Products/Product3.jpeg";
+import Product4 from "./assets/images/Products/Product4.jpeg";
+import Product5 from "./assets/images/Products/Product5.jpeg";
 
 const Products = ({ displayToast }) => {
+  let carouselElement = document.querySelector(".carousel");
+
+  const scrollCarousel = (targetImageNumber) => {
+    let carouselWidth = carouselElement.clientWidth;
+    console.log(targetImageNumber)
+    // Images are numbered from 1 to 4 so thats why we substract 1
+    let targetImage = targetImageNumber - 1;
+
+    let targetXPixel = carouselWidth * targetImage + 1;
+
+    carouselElement.scrollTo(targetXPixel, 0);
+  };
+
   return (
     <div id="Products" className="flex flex-col lg:flex-row w -full py-10">
       <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-fit p-10 lg:p-14 w-full lg:w-1/2 text-left">
@@ -36,45 +50,56 @@ const Products = ({ displayToast }) => {
           <div id="slide1" className="carousel-item relative w-full">
             <img src={Product1} className="w-full object-cover object-center" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="btn btn-circle">
+              <button onClick={() => scrollCarousel(5)} className="btn btn-circle">
                 ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle">
+              </button>
+              <button onClick={() => scrollCarousel(2)} className="btn btn-circle">
                 ❯
-              </a>
+              </button>
             </div>
           </div>
           <div id="slide2" className="carousel-item relative w-full">
             <img src={Product2} className="w-full object-cover object-center" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle">
+              <button onClick={() => scrollCarousel(1)} className="btn btn-circle">
                 ❮
-              </a>
-              <a href="#slide3" className="btn btn-circle">
+              </button>
+              <button onClick={() => scrollCarousel(3)} className="btn btn-circle">
                 ❯
-              </a>
+              </button>
             </div>
           </div>
           <div id="slide3" className="carousel-item relative w-full">
             <img src={Product3} className="w-full object-cover object-center" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" className="btn btn-circle">
+              <button onClick={() => scrollCarousel(2)} className="btn btn-circle">
                 ❮
-              </a>
-              <a href="#slide4" className="btn btn-circle">
+              </button>
+              <button onClick={() => scrollCarousel(4)} className="btn btn-circle">
                 ❯
-              </a>
+              </button>
             </div>
           </div>
           <div id="slide4" className="carousel-item relative w-full">
             <img src={Product4} className="w-full object-cover object-center" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" className="btn btn-circle">
+              <button onClick={() => scrollCarousel(3)} className="btn btn-circle">
                 ❮
-              </a>
-              <a href="#slide1" className="btn btn-circle">
+              </button>
+              <button onClick={() => scrollCarousel(5)} className="btn btn-circle">
                 ❯
-              </a>
+              </button>
+            </div>
+          </div>
+          <div id="slide5" className="carousel-item relative w-full">
+            <img src={Product5} className="w-full object-cover object-center" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <button onClick={() => scrollCarousel(4)} className="btn btn-circle">
+                ❮
+              </button>
+              <button onClick={() => scrollCarousel(1)} className="btn btn-circle">
+                ❯
+              </button>
             </div>
           </div>
         </div>

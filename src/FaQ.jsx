@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FaQNPC from "./assets/images/FaQ/FAQ npc.svg";
 
-const FaQ = () => {
+const FaQ = ({ displayToast }) => {
   const faqs = [
     {
       title: "What are recycled products?",
@@ -33,14 +33,19 @@ const FaQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <div id="FaQ" className="flex flex-col justify-center items-center gap-5 px-10 pt-10">
-      <h1 className="font-bold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-        Frequently Asked Questions
-      </h1>
-      <p>
-        Find answers to common questions about recycled products, their usage,
-        and benefits.
-      </p>
+    <div
+      id="FaQ"
+      className="flex flex-col justify-center items-center gap-5 px-10 pt-10"
+    >
+      <div className="scale-105">
+        <h1 className="font-bold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+          Frequently Asked Questions
+        </h1>
+        <p>
+          Find answers to common questions about recycled products, their usage,
+          and benefits.
+        </p>
+      </div>
 
       {faqs.map((faq, index) => (
         <div key={index} className="collapse collapse-arrow bg-base-200">
@@ -57,20 +62,24 @@ const FaQ = () => {
         </div>
       ))}
 
-      <div className="flex flex-row items-start mt-5 w-full">
+      <div className="flex flex-row items-start mt-5 w-full ">
         <div className="space-y-5">
           <h1 className="font-extrabold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
             Still have questions?
           </h1>
           <p>Contact us for more details</p>
-          <button className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-2 py-2 md:px-4 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Contact
           </button>
         </div>
         <img
           src={FaQNPC}
-          className="w-1/12 h-1/12 ml-auto"
+          className="w-1/6 md:w-1/12 h-1/6 md:h-1/12 ml-auto"
           alt="About Us Image"
+          loading="lazy"
         />
       </div>
     </div>

@@ -1,9 +1,12 @@
-import CTAImage from "./assets/images/CTA/CTA.png";
+import CTAImage from "./assets/images/CTA/CTA.webp";
 
-const CTA = () => {
+const CTA = ({ displayToast }) => {
   return (
-    <div id="CTA" className="flex flex-col-reverse lg:flex-row w-full ">
-      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-[100vh] p-8 w-full lg:w-1/2 text-left">
+    <div
+      id="CTA"
+      className="flex flex-col-reverse lg:flex-row w-full h-[calc(100vh-4rem)]"
+    >
+      <div className="scale-110 flex flex-col gap-5 lg:gap-7 items-start justify-center h-1/3 lg:h-full p-10 px-14 md:px-24 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Discover the Power of Recycling
         </h1>
@@ -13,19 +16,26 @@ const CTA = () => {
         </p>
 
         <div className="flex flex-row gap-4 ">
-          <button className="px-12 py-2 md:py-4 bg-black text-white rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-12 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Join
           </button>
-          <button className="px-6 py-2 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-6 py-2 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Learn More
           </button>
         </div>
       </div>
-      <div className="w-full h-72 lg:h-[100vh] lg:w-1/2">
+      <div className="w-full h-2/3 lg:h-full lg:w-1/2">
         <img
           src={CTAImage}
           className="w-full h-full object-center object-cover bg-no-repeat"
           alt="CTA Image"
+          loading="lazy"
         />
       </div>
     </div>

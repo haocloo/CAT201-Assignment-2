@@ -1,4 +1,4 @@
-import MissionImage from "./assets/images/Mission/mission.png";
+import MissionImage from "./assets/images/Mission/mission.webp";
 
 const Mission = () => {
   const sections = [
@@ -14,25 +14,29 @@ const Mission = () => {
     },
   ];
   return (
-    <div id="Mission" className="flex flex-col-reverse lg:flex-row w-full items-center">
-      <div className="flex flex-col gap-3 lg:gap-14 lg:justify-center lg:h-[100vh] p-8 w-full lg:w-1/2 text-left">
+    <div
+      id="Mission"
+      className="flex flex-col-reverse lg:flex-row w-full items-center h-[calc(100vh-4rem)]"
+    >
+      <div className="scale-105 flex flex-col justify-center gap-3 lg:gap-14 lg:justify-center h-1/2 lg:h-[100vh] p-10 sm:px-16 lg:p-14 w-full lg:w-1/2 text-left">
         {sections.map((section, index) => (
           <div key={index}>
-            <h1 className="my-8 font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <h1 className="mb-4 font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
               {section.title}
             </h1>
-            <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            <p className="mb-4 text-justify text-xs sm:text-base lg:text-lg xl:text-xl">
               {section.content}
             </p>
           </div>
         ))}
       </div>
 
-      <div className="lg:p-24 lg:px-8 w-full h-72 lg:h-[100vh] lg:w-1/2">
+      <div className="lg:p-24 lg:px-8 w-full h-1/2 lg:h-[100vh] lg:w-1/2">
         <img
           src={MissionImage}
-          className="lg:rounded-3xl w-full h-full object-center object-cover bg-no-repeat"
+          className="hover:scale-110 transition-all delay-150 duration-300 ease-in-out lg:shadow-xl lg:shadow-black/40 lg:rounded-3xl w-full h-full object-center object-cover bg-no-repeat"
           alt="Mission Image"
+          loading="lazy"
         />
       </div>
     </div>

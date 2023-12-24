@@ -1,17 +1,31 @@
-import logo from "../assets/images/global/logo.svg";
+import { useEffect } from "react";
+import logo from "../assets/images/global/logo.webp";
 
-const Header = () => {
+const Header = ({ displayToast }) => {
+  useEffect(() => {
+    var details = [...document.querySelectorAll("details")];
+    document.addEventListener("click", function (e) {
+      if (!details.some((f) => f.contains(e.target))) {
+        details.forEach((f) => f.removeAttribute("open"));
+      } else {
+        details.forEach((f) =>
+          !f.contains(e.target) ? f.removeAttribute("open") : ""
+        );
+      }
+    });
+  }, []);
+
   return (
-    <div className="navbar border-b-2 border-black/50">
+    <div className="fixed z-[999] h-16 navbar bg-gradient-to-r from-[#02285a] to-[#026f13]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="Login" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
             >
               <path
                 strokeLinecap="round"
@@ -52,6 +66,9 @@ const Header = () => {
                   <a href="#Process">Process</a>
                 </li>
                 <li>
+                  <a href="#Rating">Rating</a>
+                </li>
+                <li>
                   <a href="#Mission">Mission</a>
                 </li>
                 <li>
@@ -61,16 +78,20 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
-          <img src={logo} className="h-full" alt="Logo" />
-          Recyco
+        <a
+          href="#HeroVideo"
+          className="flex flex-row items-center gap-3 btn btn-ghost"
+        >
+          <img src={logo} className="h-8 w-8" alt="Logo" loading="lazy" />
+          <p className="text-2xl text-white">Recyco</p>
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+
+      <div className="navbar-center hidden lg:flex font-bold">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <details>
-              <summary>Services</summary>
+            <details className=" mx-1">
+              <summary className=" text-white text-lg">Services</summary>
               <ul className="p-2">
                 <li>
                   <a href="#Products">Products</a>
@@ -88,14 +109,17 @@ const Header = () => {
             </details>
           </li>
           <li>
-            <details>
-              <summary>Company</summary>
+            <details className="mx-1">
+              <summary className="text-white text-lg">Company</summary>
               <ul className="p-2">
                 <li>
                   <a href="#AboutUs">About Us</a>
                 </li>
                 <li>
                   <a href="#Process">Process</a>
+                </li>
+                <li>
+                  <a href="#Rating">Rating</a>
                 </li>
                 <li>
                   <a href="#Mission">Mission</a>
@@ -109,7 +133,12 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        <button
+          onClick={() => displayToast()}
+          className="btn bg-transparent text-white text-lg"
+        >
+          LOGIN
+        </button>
       </div>
     </div>
   );

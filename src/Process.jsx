@@ -3,8 +3,11 @@ import Leaf from "./assets/images/Benefits/leaf.png";
 
 const Process = () => {
   return (
-    <div id="Process" className="flex flex-col lg:flex-row w-full h-fit bg-green-200">
-      <div className="flex flex-col gap-3 lg:gap-7 relative lg:pt-20 p-8 w-full lg:h-[55vh] lg:w-1/2 text-left">
+    <div
+      id="Process"
+      className="flex flex-col lg:flex-row w-fit h-fit bg-green-200"
+    >
+      <div className="flex flex-col gap-3 lg:gap-7 relative lg:pt-20 p-8 pb-0 w-fit lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Recycle</h3>
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Transforming Waste into Sustainable Products
@@ -22,7 +25,7 @@ const Process = () => {
 
         <img
           src={ProcessNPC}
-          className="hidden lg:block absolute bottom-0 translate-x-1/2 w-1/4 h-1/4 lg:w-1/3 lg:h-1/3"
+          className="hidden lg:flex absolute bottom-0 translate-x-1/2 w-1/4 h-1/4 lg:w-2/5 lg:h-2/5"
           alt="Process NPC Image"
         />
         <img
@@ -32,7 +35,7 @@ const Process = () => {
         />
       </div>
       {/* timeline */}
-      <div className="py-20 w-1/2 flex place-items-center">
+      <div className="pb-20 lg:pt-20 w-1/2 flex place-items-center">
         <ul className="timeline timeline-vertical">
           <li className="w-full relative -left-1/3">
             <div className="timeline-middle">

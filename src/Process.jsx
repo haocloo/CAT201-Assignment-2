@@ -54,7 +54,7 @@ const Process = ({ displayToast }) => {
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Collection Process
@@ -78,7 +78,7 @@ const Process = ({ displayToast }) => {
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Transformation
@@ -102,7 +102,7 @@ const Process = ({ displayToast }) => {
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Final Product
@@ -126,7 +126,7 @@ const Process = ({ displayToast }) => {
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Educating Customers

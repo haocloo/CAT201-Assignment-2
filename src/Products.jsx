@@ -3,7 +3,7 @@ import Product2 from "./assets/images/Products/Product2.png";
 import Product3 from "./assets/images/Products/Product3.png";
 import Product4 from "./assets/images/Products/Product4.png";
 
-const Products = () => {
+const Products = ({ displayToast }) => {
   return (
     <div id="Products" className="flex flex-col lg:flex-row w -full py-10">
       <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-fit p-10 lg:p-14 w-full lg:w-1/2 text-left">
@@ -16,10 +16,16 @@ const Products = () => {
         </p>
 
         <div className="flex flex-row gap-4 ">
-          <button className="px-2 py-2 md:px-4 md:py-4 bg-black text-white rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-2 py-2 md:px-4 md:py-4 bg-black text-white rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Sign Up
           </button>
-          <button className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Shop now
           </button>
         </div>

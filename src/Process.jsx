@@ -1,7 +1,7 @@
 import ProcessNPC from "./assets/images/Process/processNPC.svg";
 import Leaf from "./assets/images/Benefits/leaf.png";
 
-const Process = () => {
+const Process = ({ displayToast }) => {
   return (
     <div
       id="Process"
@@ -14,10 +14,16 @@ const Process = () => {
         </h1>
 
         <div className="flex flex-row gap-4 ">
-          <button className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Learn More
           </button>
-          <button className="px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             <span>Sign Up</span>
             <i className="fa fa-chevron-right"></i>
           </button>

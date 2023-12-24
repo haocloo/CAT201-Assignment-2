@@ -1,4 +1,4 @@
-const Feature = () => {
+const Feature = ({ handleClick }) => {
   return (
     <div id="Feature" className="flex flex-col-reverse lg:flex-row w-full ">
       <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-[100vh] p-10 lg:p-14 w-full lg:w-1/2 text-left">
@@ -16,9 +16,12 @@ const Feature = () => {
 
         <div className="flex flex-row gap-4 ">
           <button className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
-            Learn More
+            <a href="#Benefits">Learn More</a>
           </button>
-          <button className="px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => handleClick()}
+            className="px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             <span>Sign Up</span>
             <i className="fa fa-chevron-right"></i>
           </button>

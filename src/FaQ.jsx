@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FaQNPC from "./assets/images/FaQ/FAQ npc.svg";
 
-const FaQ = () => {
+const FaQ = ({ displayToast }) => {
   const faqs = [
     {
       title: "What are recycled products?",
@@ -33,7 +33,10 @@ const FaQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <div id="FaQ" className="flex flex-col justify-center items-center gap-5 px-10 pt-10">
+    <div
+      id="FaQ"
+      className="flex flex-col justify-center items-center gap-5 px-10 pt-10"
+    >
       <h1 className="font-bold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
         Frequently Asked Questions
       </h1>
@@ -63,7 +66,10 @@ const FaQ = () => {
             Still have questions?
           </h1>
           <p>Contact us for more details</p>
-          <button className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Contact
           </button>
         </div>

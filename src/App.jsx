@@ -12,23 +12,41 @@ import Team from "./Team";
 import CTA from "./CTA";
 import Footer from "./global/Footer";
 import HeroVideo from "./HeroVideo";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
+  const displayToast = () => {
+    console.log(1);
+    toast.warn("Feature Coming Soon", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      limit: 1,
+    });
+  };
+
   return (
     <>
+      <ToastContainer />
       <Header />
       <HeroVideo />
-      <Hero />
+      <Hero displayToast={displayToast} />
       <AboutUs />
       <Mission />
-      <Feature />
-      <Benefits/>
-      <Process />
-      <Products />
+      <Feature displayToast={displayToast} />
+      <Benefits />
+      <Process displayToast={displayToast} />
+      <Products displayToast={displayToast} />
       <Rating />
-      <FaQ />
-      <Team />
-      <CTA />
+      <FaQ displayToast={displayToast} />
+      <Team displayToast={displayToast} />
+      <CTA displayToast={displayToast}/>
       <Footer />
     </>
   );

@@ -20,7 +20,7 @@ const HeroVideo = () => {
       <video
         src={video}
         type="video/mp4"
-        className="absolute top-0 left-0 object-cover w-full h-full"
+        className="absolute top-16 left-0 object-cover w-full h-full"
         autoPlay
         loop
         muted

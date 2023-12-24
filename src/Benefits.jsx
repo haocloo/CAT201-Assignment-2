@@ -7,7 +7,7 @@ const Benefits = () => {
       id="Benefits"
       className="flex flex-col-reverse lg:flex-row w-full items-center"
     >
-      <div className="flex flex-col gap-3 lg:gap-14 lg:justify-center lg:h-[80vh] p-8 w-full lg:w-1/2 text-left">
+      <div className="flex flex-col gap-3 lg:gap-14 lg:justify-center lg:h-[80vh] p-10 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Discover the Benefits of Using Recycled Products
         </h1>

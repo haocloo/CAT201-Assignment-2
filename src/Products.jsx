@@ -6,7 +6,7 @@ import Product4 from "./assets/images/Products/Product4.png";
 const Products = () => {
   return (
     <div id="Products" className="flex flex-col lg:flex-row w -full py-10">
-      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-fit p-8 w-full lg:w-1/2 text-left">
+      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-fit p-10 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Discover Our Eco-Friendly Products
         </h1>

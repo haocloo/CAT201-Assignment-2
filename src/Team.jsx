@@ -39,7 +39,10 @@ const Card = ({
 
 const Team = () => {
   return (
-    <div id="Team" className="flex flex-col h-fit justify-center items-center gap-3 w-full pt-16 py-10 bg-green-200 text-black">
+    <div
+      id="Team"
+      className="flex flex-col h-fit justify-center items-center gap-3 w-full pt-16 px-10 lg:px-14 py-10 bg-green-200 text-black"
+    >
       <h3 className="text-lg sm:text-xl md:text-2xl">Sustainable</h3>
       <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
         Meet Our Team

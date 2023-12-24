@@ -18,7 +18,7 @@ const Mission = () => {
       id="Mission"
       className="flex flex-col-reverse lg:flex-row w-full items-center"
     >
-      <div className="flex flex-col gap-3 lg:gap-14 lg:justify-center lg:h-[100vh] p-8 w-full lg:w-1/2 text-left">
+      <div className="flex flex-col gap-3 lg:gap-14 lg:justify-center lg:h-[100vh] p-10 lg:p-14 w-full lg:w-1/2 text-left">
         {sections.map((section, index) => (
           <div key={index}>
             <h1 className="my-8 font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">

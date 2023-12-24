@@ -7,7 +7,7 @@ const Process = () => {
       id="Process"
       className="flex flex-col lg:flex-row w-fit h-fit bg-green-200"
     >
-      <div className="flex flex-col gap-3 lg:gap-7 relative lg:pt-20 p-8 pb-0 w-fit lg:w-1/2 text-left">
+      <div className="flex flex-col gap-3 lg:gap-7 relative lg:pt-20 p-10 lg:p-14 pb-0 w-fit lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Recycle</h3>
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Transforming Waste into Sustainable Products

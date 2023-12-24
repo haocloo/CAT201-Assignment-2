@@ -117,13 +117,13 @@ const Team = ({ displayToast }) => {
         />
       </div>
 
-      <div className="scale-125 h-1/6 text-center space-y-5">
+      <div className="scale-125 h-1/6 text-white text-center space-y-5">
         <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
           We&apos;re Hiring!
         </h1>
         <button
           onClick={() => displayToast()}
-          className="px-2 py-2 md:px-8 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          className="px-2 py-2 md:px-8 md:py-4 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
         >
           Contact
         </button>

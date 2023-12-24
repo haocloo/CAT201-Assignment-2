@@ -1,8 +1,8 @@
 import logo from "../assets/images/global/logo.png";
 
-const Footer = () => {
+const Footer = ({ displayToast }) => {
   return (
-    <footer className="footer p-10 bg-[#242424] text-white">
+    <footer id="#Footer" className="footer p-10 bg-[#242424] text-white">
       <a
         href="#Hero"
         className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
@@ -52,7 +52,9 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
         <form className="w-full">
-          <header className="footer-title text-white text-lg">Newsletter</header>
+          <header className="footer-title text-white text-lg">
+            Newsletter
+          </header>
           <fieldset className="form-control">
             <label className="label">
               <span className="label-text">Enter your email address</span>
@@ -63,7 +65,15 @@ const Footer = () => {
                 placeholder="username@site.com"
                 className="input input-bordered join-item placeholder:text-black/80"
               />
-              <button className="btn btn-primary join-item">Subscribe</button>
+              <button
+                onClick={() => {
+                  displayToast();
+                  window.location.href = "#Footer";
+                }}
+                className="btn btn-primary join-item"
+              >
+                Subscribe
+              </button>
             </div>
           </fieldset>
         </form>

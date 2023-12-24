@@ -17,7 +17,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   const displayToast = () => {
-    console.log(1);
     toast.warn("Feature Coming Soon", {
       position: "top-right",
       autoClose: 3000,
@@ -27,7 +26,6 @@ export default function App() {
       draggable: true,
       progress: undefined,
       theme: "dark",
-      limit: 1,
     });
   };
 
@@ -47,7 +45,7 @@ export default function App() {
       <FaQ displayToast={displayToast} />
       <Team displayToast={displayToast} />
       <CTA displayToast={displayToast}/>
-      <Footer />
+      <Footer displayToast={displayToast}/>
     </>
   );
 }

@@ -2,8 +2,11 @@ import HeroImage from "./assets/images/Hero/Hero.png";
 
 const Hero = ({ displayToast }) => {
   return (
-    <div id="Hero" className="flex flex-col-reverse lg:flex-row w-full ">
-      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-[100vh] p-10 lg:p-14 w-full lg:w-1/2 text-left">
+    <div
+      id="Hero"
+      className="flex flex-col-reverse lg:flex-row w-full h-[calc(100vh-4rem)]"
+    >
+      <div className="scale-105 flex flex-col gap-3 lg:gap-7 lg:justify-center h-1/2 lg:h-full p-10 sm:px-16 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Transforming Waste into Sustainable Solutions
         </h1>
@@ -27,7 +30,7 @@ const Hero = ({ displayToast }) => {
           </button>
         </div>
       </div>
-      <div className="w-full h-72 lg:h-[100vh] lg:w-1/2">
+      <div className="w-full h-1/2 lg:h-full lg:w-1/2">
         <img
           src={HeroImage}
           className="w-full h-full object-center object-cover bg-no-repeat"

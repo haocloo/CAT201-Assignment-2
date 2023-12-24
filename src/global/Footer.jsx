@@ -2,7 +2,7 @@ import logo from "../assets/images/global/logo.png";
 
 const Footer = ({ displayToast }) => {
   return (
-    <footer id="#Footer" className="footer p-10 bg-[#242424] text-white">
+    <footer id="#Footer" className="footer p-5 md:p-10 bg-[#242424] text-white w-screen">
       <a
         href="#HeroVideo"
         className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
@@ -14,7 +14,7 @@ const Footer = ({ displayToast }) => {
         />
         <p className="-mt-7 -mr-3 font-bold text-2xl">Recyco</p>
       </a>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 md:pr-28 sm:pr-10">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-0 px-4 md:pr-28 sm:pr-10">
         <nav className="flex flex-col gap-5">
           <header className="footer-title text-white text-lg">Services</header>
           <a href="#Products" className="link link-hover">
@@ -59,16 +59,17 @@ const Footer = ({ displayToast }) => {
             <label className="label">
               <span className="label-text">Enter your email address</span>
             </label>
-            <div className="join">
+            <div className="flex flex-col lg:flex-row join w-full">
               <input
                 type="text"
                 placeholder="username@site.com"
-                className="input input-bordered join-item placeholder:text-black/80"
+                className="w-full rounded p-3 focus:outline-none placeholder:text-black/80 text-black"
               />
               <button
-                onClick={() => {
+                onClick={(e) => {
                   displayToast();
                   window.location.href = "#Footer";
+                  e.preventDefault();
                 }}
                 className="btn btn-primary join-item"
               >

@@ -26,14 +26,14 @@ const Products = ({ displayToast }) => {
     let targetXPixel = carouselWidth * targetImage + 1;
 
     carouselElement.current.scrollTo(targetXPixel, 0);
-  };
+};
 
   return (
     <div
       id="Products"
-      className="flex flex-col lg:flex-row h-[calc(100vh-4rem)] items-center w-full py-10"
+      className="flex flex-col lg:flex-row h-[calc(100vh-4rem)] items-center w-full py-8 px-10"
     >
-      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-fit p-10 lg:p-14 w-full lg:w-1/2 text-left">
+      <div className="scale-110 flex flex-col gap-3 lg:gap-7 justify-center h-1/3 lg:h-full p-10 sm:px-10 mb-5 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Discover Our Eco-Friendly Products
         </h1>
@@ -58,8 +58,8 @@ const Products = ({ displayToast }) => {
         </div>
       </div>
 
-      <div className="w-full h-fit lg:h-fit lg:w-1/2 grid justify-items-center">
-        <div className="carousel h-80 w-[90%]">
+      <div className="w-full h-2/3 lg:h-full lg:w-1/2 grid place-items-center">
+        <div className="carousel h-[90%] lg:h-[80%] w-[90%] scale-[105%] rounded-xl shadow-xl shadow-black/30">
           <div id="slide1" className="carousel-item relative w-full">
             <img src={Product1} className="w-full object-cover object-center" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

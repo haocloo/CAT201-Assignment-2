@@ -1,7 +1,10 @@
 const Feature = ({ handleClick }) => {
   return (
-    <div id="Feature" className="flex flex-col-reverse lg:flex-row w-full ">
-      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center lg:h-[100vh] p-10 lg:p-14 w-full lg:w-1/2 text-left">
+    <div
+      id="Feature"
+      className="flex flex-col-reverse lg:flex-row w-full h-[calc(100vh-4rem)]"
+    >
+      <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center h-1/2 lg:h-full px-10 my-5 lg:p-14 w-full lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Eco-friendly</h3>
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Quality Recycled Products for a Sustainable Future
@@ -28,18 +31,18 @@ const Feature = ({ handleClick }) => {
         </div>
       </div>
 
-      <div className="hidden lg:block -mt-24 relative h-full w-1/2 ">
-        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[100px] left-[188px] xl:left-[218px] bg-[url(./assets/images/Feature/product1.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-10"></div>
-        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[260px] left-0                       bg-[url(./assets/images/Feature/product2.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-8"></div>
-        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[420px] left-[188px] xl:left-[218px] bg-[url(./assets/images/Feature/product3.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-9"></div>
-        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[580px] left-0                       bg-[url(./assets/images/Feature/product4.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-10"></div>
+      <div className="hidden lg:flex flex-col justify-center items-center relative h-full w-1/2 ">
+        <div className="absolute hover:scale-125 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[3%]  left-[30%] xl:left-[33%] bg-[url(./assets/images/Feature/product1.png)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-10"></div>
+        <div className="absolute hover:scale-125 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[22%] left-0     xl:left-[10%] bg-[url(./assets/images/Feature/product2.png)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-8"></div>
+        <div className="absolute hover:scale-125 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[42%] left-[30%] xl:left-[33%] bg-[url(./assets/images/Feature/product3.png)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-9"></div>
+        <div className="absolute hover:scale-125 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[62%] left-0     xl:left-[10%] bg-[url(./assets/images/Feature/product4.png)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-10"></div>
       </div>
 
-      <div className="lg:hidden relative w-full h-32 md:h-48 flex flex-row">
-        <div className="left-8             bg-[url(./assets/images/Feature/product1.png)] absolute w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%]"></div>
-        <div className="left-20 md:left-28 bg-[url(./assets/images/Feature/product2.png)] absolute w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%]"></div>
-        <div className="left-32 md:left-48 bg-[url(./assets/images/Feature/product3.png)] absolute w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%]"></div>
-        <div className="left-44 md:left-72 bg-[url(./assets/images/Feature/product4.png)] absolute w-28 h-28 md:w-48 md:h-48 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%]"></div>
+      <div className="lg:hidden relative w-full h-1/2 flex flex-row items-center">
+        <div className="left-[10%] sm:left-[5%]  hover:scale-125 transition-all duration-500 ease-in-out bg-[url(./assets/images/Feature/product1.png)] absolute w-36 h-36 sm:w-48 sm:h-48 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover"></div>
+        <div className="left-[25%] sm:left-[20%] hover:scale-125 transition-all duration-500 ease-in-out bg-[url(./assets/images/Feature/product2.png)] absolute w-36 h-36 sm:w-48 sm:h-48 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover"></div>
+        <div className="left-[40%] sm:left-[35%] hover:scale-125 transition-all duration-500 ease-in-out bg-[url(./assets/images/Feature/product3.png)] absolute w-36 h-36 sm:w-48 sm:h-48 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover"></div>
+        <div className="left-[55%] sm:left-[50%] hover:scale-125 transition-all duration-500 ease-in-out bg-[url(./assets/images/Feature/product4.png)] absolute w-36 h-36 sm:w-48 sm:h-48 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover"></div>
       </div>
     </div>
   );

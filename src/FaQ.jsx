@@ -37,13 +37,15 @@ const FaQ = ({ displayToast }) => {
       id="FaQ"
       className="flex flex-col justify-center items-center gap-5 px-10 pt-10"
     >
-      <h1 className="font-bold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-        Frequently Asked Questions
-      </h1>
-      <p>
-        Find answers to common questions about recycled products, their usage,
-        and benefits.
-      </p>
+      <div className="scale-105">
+        <h1 className="font-bold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+          Frequently Asked Questions
+        </h1>
+        <p>
+          Find answers to common questions about recycled products, their usage,
+          and benefits.
+        </p>
+      </div>
 
       {faqs.map((faq, index) => (
         <div key={index} className="collapse collapse-arrow bg-base-200">

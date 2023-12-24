@@ -12,7 +12,7 @@ const Card = ({
   socmed,
 }) => {
   return (
-    <div className="scale-[70%] w-full">
+    <div className="w-full">
       <div className="rounded-2xl group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow shadow-xl hover:shadow-black/30 shadow-black/50">
         <div className="h-96 w-72">
           <img
@@ -54,16 +54,18 @@ const Team = ({ displayToast }) => {
   return (
     <div
       id="Team"
-      className="flex flex-col h-fit justify-center items-center gap-3 w-full pt-16 px-10 lg:px-14 py-10 bg-green-200 text-black"
+      className="flex flex-col h-fit justify-center items-center w-full px-10 lg:px-14 py-10 bg-green-200 text-black"
     >
-      <h3 className="text-lg sm:text-xl md:text-2xl">Sustainable</h3>
-      <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-        Meet Our Team
-      </h1>
-      <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-        Passionate individuals dedicated to sustainability
-      </p>
-      <div className="grid grid-cols-1 -space-y-20 sm:space-y-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="scale-125 h-2/6 lg:h-full text-center gap-3 ">
+        <h3 className="text-lg sm:text-2xl">Sustainable</h3>
+        <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
+          Meet Our Team
+        </h1>
+        <p className="text-justify text-xs sm:text-lg xl:text-xl">
+          Passionate individuals dedicated to sustainability
+        </p>
+      </div>
+      <div className="h-2/6 -mt-40 sm:-mt-16 scale-75 lg:h-full grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <Card
           image={yeoImage}
           name="Yeo Din Song"
@@ -114,15 +116,17 @@ const Team = ({ displayToast }) => {
         />
       </div>
 
-      <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-        We&apos;re Hiring!
-      </h1>
-      <button
-        onClick={() => displayToast()}
-        className="px-2 py-2 md:px-8 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
-      >
-        Contact
-      </button>
+      <div className="scale-125 h-1/6 text-center space-y-5">
+        <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
+          We&apos;re Hiring!
+        </h1>
+        <button
+          onClick={() => displayToast()}
+          className="px-2 py-2 md:px-8 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
+        >
+          Contact
+        </button>
+      </div>
     </div>
   );
 };

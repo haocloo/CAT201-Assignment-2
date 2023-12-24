@@ -11,11 +11,13 @@ import FaQ from "./FaQ";
 import Team from "./Team";
 import CTA from "./CTA";
 import Footer from "./global/Footer";
+import HeroVideo from "./HeroVideo";
 
 export default function App() {
   return (
     <>
       <Header />
+      <HeroVideo />
       <Hero />
       <AboutUs />
       <Mission />

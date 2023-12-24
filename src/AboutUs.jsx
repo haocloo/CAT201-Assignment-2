@@ -25,7 +25,7 @@ const AboutUs = () => {
         <div className="self-end">
           <img
             src={AboutUsNPC}
-            className="self-end w-[40%] md:w-[20%] h-fit lg:w-1/2 lg:h-1/2 ml-auto"
+            className="self-end w-[30%] md:w-[20%] h-fit lg:w-1/2 lg:h-1/2 ml-auto"
             alt="About Us Image"
             loading="lazy"
           />

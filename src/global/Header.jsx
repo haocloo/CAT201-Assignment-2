@@ -1,8 +1,22 @@
+import { useEffect } from "react";
 import logo from "../assets/images/global/logo.png";
 
 const Header = () => {
+  useEffect(() => {
+    var details = [...document.querySelectorAll("details")];
+    document.addEventListener("click", function (e) {
+      if (!details.some((f) => f.contains(e.target))) {
+        details.forEach((f) => f.removeAttribute("open"));
+      } else {
+        details.forEach((f) =>
+          !f.contains(e.target) ? f.removeAttribute("open") : ""
+        );
+      }
+    });
+  }, []);
+
   return (
-    <div className="navbar bg-gradient-to-r from-blue-900 to-green-700">
+    <div className="fixed z-[999] navbar bg-gradient-to-r from-blue-900 to-green-700">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="Login" className="btn btn-ghost lg:hidden">
@@ -66,11 +80,12 @@ const Header = () => {
           <p className="text-2xl text-white">Recyco</p>
         </a>
       </div>
+
       <div className="navbar-center hidden lg:flex font-bold">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <details className="mx-1">
-              <summary className="text-white">Services</summary>
+            <details className=" mx-1">
+              <summary className=" text-white">Services</summary>
               <ul className="p-2">
                 <li>
                   <a href="#Products">Products</a>

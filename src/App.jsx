@@ -21,7 +21,6 @@ export default function App() {
       <Mission />
       <Feature />
       <Benefits/>
-      <AboutUs />
       <Process />
       <Products />
       <Rating />

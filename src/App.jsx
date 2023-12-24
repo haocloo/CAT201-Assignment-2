@@ -29,23 +29,33 @@ export default function App() {
     });
   };
 
+  const components = [
+    HeroVideo,
+    Hero,
+    AboutUs,
+    Mission,
+    Feature,
+    Benefits,
+    Process,
+    Products,
+    Rating,
+    FaQ,
+    Team,
+    CTA,
+    Footer,
+  ];
+
   return (
     <>
       <ToastContainer />
       <Header />
-      <HeroVideo displayToast={displayToast} />
-      <Hero displayToast={displayToast} />
-      <AboutUs />
-      <Mission />
-      <Feature displayToast={displayToast} />
-      <Benefits />
-      <Process displayToast={displayToast} />
-      <Products displayToast={displayToast} />
-      <Rating />
-      <FaQ displayToast={displayToast} />
-      <Team displayToast={displayToast} />
-      <CTA displayToast={displayToast}/>
-      <Footer displayToast={displayToast}/>
+      <div className="snap-y snap-mandatory h-screen overflow-scroll">
+        {components.map((Component, index) => (
+          <div key={index} className="snap-start">
+            <Component displayToast={displayToast} />
+          </div>
+        ))}
+      </div>
     </>
   );
 }

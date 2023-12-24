@@ -1,17 +1,17 @@
-import logo from "../assets/images/global/logo.svg";
+import logo from "../assets/images/global/logo.png";
 
 const Header = () => {
   return (
-    <div className="navbar border-b-2 border-black/50">
+    <div className="navbar bg-gradient-to-r from-blue-900 to-green-700">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="Login" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
             >
               <path
                 strokeLinecap="round"
@@ -61,16 +61,16 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
-          <img src={logo} className="h-full" alt="Logo" />
-          Recyco
+        <a className="flex flex-row items-center btn btn-ghost">
+          <img src={logo} className="h-7 w-7" alt="Logo" />
+          <p className="text-2xl text-white">Recyco</p>
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex font-bold">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <details>
-              <summary>Services</summary>
+            <details className="mx-1">
+              <summary className="text-white">Services</summary>
               <ul className="p-2">
                 <li>
                   <a href="#Products">Products</a>
@@ -88,8 +88,8 @@ const Header = () => {
             </details>
           </li>
           <li>
-            <details>
-              <summary>Company</summary>
+            <details className="mx-1">
+              <summary className="text-white">Company</summary>
               <ul className="p-2">
                 <li>
                   <a href="#AboutUs">About Us</a>
@@ -109,7 +109,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        <a className="btn bg-transparent text-white">LOGIN</a>
       </div>
     </div>
   );

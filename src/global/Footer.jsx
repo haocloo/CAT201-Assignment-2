@@ -1,9 +1,12 @@
-import logo from "../assets/images/global/logo.svg";
+import logo from "../assets/images/global/logo.png";
 
 const Footer = () => {
   return (
     <footer className="footer p-10 bg-base-200 text-base-content">
-      <a href="#Hero" className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0">
+      <a
+        href="#Hero"
+        className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
+      >
         <img src={logo} className="h-28 -mt-5 -mr-4" alt="Logo" />
         <p className="-mt-6 -mr-3 font-bold text-black text-2xl">Recyco</p>
       </a>

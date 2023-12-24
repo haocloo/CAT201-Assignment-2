@@ -6,7 +6,7 @@ const HeroVideo = ({ displayToast }) => {
       id="HeroVideo"
       className="relative h-screen pt-16 w-screen overflow-hidden"
     >
-      <div className="absolute bg-black/20 lg:scale-125 top-0 z-10 w-full h-full flex text-center flex-col gap-5 justify-center items-center text-white">
+      <div className="absolute bg-black/20 lg:scale-125 top-16 z-10 w-full h-full flex text-center flex-col gap-5 justify-center items-center text-white">
         <h1 className="mx-auto text-5xl font-semibold font-sans">
           LET&apos;S RECYCLE TOGETHER
         </h1>
@@ -26,7 +26,7 @@ const HeroVideo = ({ displayToast }) => {
       <video
         src={video}
         type="video/mp4"
-        className="absolute top-0 left-0 object-cover w-full h-full"
+        className="absolute top-16 left-0 object-cover w-full h-full"
         autoPlay
         loop
         muted

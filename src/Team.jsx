@@ -1,7 +1,7 @@
-import yeoImage from "./assets/images/Team/yeo.jpg";
-import looImage from "./assets/images/Team/loo.png";
-import ljlImage from "./assets/images/Team/ljl.jpg";
-import lyjImage from "./assets/images/Team/lyj.jpg";
+import yeoImage from "./assets/images/Team/yeo.webp";
+import looImage from "./assets/images/Team/loo.webp";
+import ljlImage from "./assets/images/Team/ljl.webp";
+import lyjImage from "./assets/images/Team/lyj.webp";
 
 const Card = ({
   image,
@@ -19,6 +19,7 @@ const Card = ({
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-125"
             src={image}
             alt={name}
+            loading="lazy"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
@@ -54,7 +55,7 @@ const Team = ({ displayToast }) => {
   return (
     <div
       id="Team"
-      className="flex flex-col h-fit justify-center items-center w-full px-10 lg:px-14 py-10 bg-green-200 text-black"
+      className="flex flex-col h-fit min-h-[calc(100vh-4rem)] justify-center items-center w-full px-10 lg:px-14 py-10 bg-green-200 text-black"
     >
       <div className="scale-125 h-2/6 lg:h-full text-center gap-3 ">
         <h3 className="text-lg sm:text-2xl">Sustainable</h3>
@@ -65,7 +66,7 @@ const Team = ({ displayToast }) => {
           Passionate individuals dedicated to sustainability
         </p>
       </div>
-      <div className="h-2/6 -mt-40 sm:-mt-16 scale-75 lg:h-full grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="h-2/6 -mt-40 sm:-mt-16 md:mt-0 scale-75 lg:h-full grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <Card
           image={yeoImage}
           name="Yeo Din Song"

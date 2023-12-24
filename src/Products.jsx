@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 
-import Product1 from "./assets/images/Products/Product1.jpeg";
-import Product2 from "./assets/images/Products/Product2.jpeg";
-import Product3 from "./assets/images/Products/Product3.jpeg";
-import Product4 from "./assets/images/Products/Product4.jpeg";
-import Product5 from "./assets/images/Products/Product5.jpeg";
+import Product1 from "./assets/images/Products/Product1.webp";
+import Product2 from "./assets/images/Products/Product2.webp";
+import Product3 from "./assets/images/Products/Product3.webp";
+import Product4 from "./assets/images/Products/Product4.webp";
+import Product5 from "./assets/images/Products/Product5.webp";
 
 const Products = ({ displayToast }) => {
   const carouselElement = useRef(null);
@@ -26,7 +26,7 @@ const Products = ({ displayToast }) => {
     let targetXPixel = carouselWidth * targetImage + 1;
 
     carouselElement.current.scrollTo(targetXPixel, 0);
-};
+  };
 
   return (
     <div
@@ -61,7 +61,11 @@ const Products = ({ displayToast }) => {
       <div className="w-full h-2/3 lg:h-full lg:w-1/2 grid place-items-center">
         <div className="carousel h-[90%] lg:h-[80%] w-[90%] scale-[105%] rounded-xl shadow-xl shadow-black/30">
           <div id="slide1" className="carousel-item relative w-full">
-            <img src={Product1} className="w-full object-cover object-center" />
+            <img
+              src={Product1}
+              className="w-full object-cover object-center"
+              loading="lazy"
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <button
                 onClick={() => scrollCarousel(5)}
@@ -78,7 +82,11 @@ const Products = ({ displayToast }) => {
             </div>
           </div>
           <div id="slide2" className="carousel-item relative w-full">
-            <img src={Product2} className="w-full object-cover object-center" />
+            <img
+              src={Product2}
+              className="w-full object-cover object-center"
+              loading="lazy"
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <button
                 onClick={() => scrollCarousel(1)}
@@ -95,7 +103,11 @@ const Products = ({ displayToast }) => {
             </div>
           </div>
           <div id="slide3" className="carousel-item relative w-full">
-            <img src={Product3} className="w-full object-cover object-center" />
+            <img
+              src={Product3}
+              className="w-full object-cover object-center"
+              loading="lazy"
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <button
                 onClick={() => scrollCarousel(2)}
@@ -112,7 +124,11 @@ const Products = ({ displayToast }) => {
             </div>
           </div>
           <div id="slide4" className="carousel-item relative w-full">
-            <img src={Product4} className="w-full object-cover object-center" />
+            <img
+              src={Product4}
+              className="w-full object-cover object-center"
+              loading="lazy"
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <button
                 onClick={() => scrollCarousel(3)}
@@ -129,7 +145,11 @@ const Products = ({ displayToast }) => {
             </div>
           </div>
           <div id="slide5" className="carousel-item relative w-full">
-            <img src={Product5} className="w-full object-cover object-center" />
+            <img
+              src={Product5}
+              className="w-full object-cover object-center"
+              loading="lazy"
+            />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <button
                 onClick={() => scrollCarousel(4)}

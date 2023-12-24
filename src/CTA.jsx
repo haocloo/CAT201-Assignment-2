@@ -1,4 +1,4 @@
-import CTAImage from "./assets/images/CTA/CTA.png";
+import CTAImage from "./assets/images/CTA/CTA.webp";
 
 const CTA = ({ displayToast }) => {
   return (
@@ -35,6 +35,7 @@ const CTA = ({ displayToast }) => {
           src={CTAImage}
           className="w-full h-full object-center object-cover bg-no-repeat"
           alt="CTA Image"
+          loading="lazy"
         />
       </div>
     </div>

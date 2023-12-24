@@ -1,8 +1,11 @@
-import logo from "../assets/images/global/logo.png";
+import logo from "../assets/images/global/logo.webp";
 
 const Footer = ({ displayToast }) => {
   return (
-    <footer id="#Footer" className="footer p-5 md:p-10 bg-[#242424] text-white w-screen">
+    <footer
+      id="#Footer"
+      className="footer p-5 md:p-10 bg-[#242424] text-white w-screen"
+    >
       <a
         href="#HeroVideo"
         className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
@@ -11,6 +14,7 @@ const Footer = ({ displayToast }) => {
           src={logo}
           className="h-32 w-36 scale-[60%] -mt-5 -mr-4"
           alt="Logo"
+          loading="lazy"
         />
         <p className="-mt-7 -mr-3 font-bold text-2xl">Recyco</p>
       </a>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import logo from "../assets/images/global/logo.png";
+import logo from "../assets/images/global/logo.webp";
 
 const Header = ({ displayToast }) => {
   useEffect(() => {
@@ -79,7 +79,7 @@ const Header = ({ displayToast }) => {
           href="#HeroVideo"
           className="flex flex-row items-center gap-3 btn btn-ghost"
         >
-          <img src={logo} className="h-8 w-8" alt="Logo" />
+          <img src={logo} className="h-8 w-8" alt="Logo" loading="lazy" />
           <p className="text-2xl text-white">Recyco</p>
         </a>
       </div>

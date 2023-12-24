@@ -1,5 +1,5 @@
 import ProcessNPC from "./assets/images/Process/processNPC.svg";
-import Leaf from "./assets/images/Benefits/leaf.png";
+import Leaf from "./assets/images/Benefits/leaf.webp";
 
 const Process = ({ displayToast }) => {
   return (
@@ -33,19 +33,21 @@ const Process = ({ displayToast }) => {
           src={ProcessNPC}
           className="hidden lg:flex absolute bottom-0 translate-x-1/2 w-1/4 h-1/4 lg:w-2/5 lg:h-2/5"
           alt="Process NPC Image"
+          loading="lazy"
         />
       </div>
       <img
         src={ProcessNPC}
         className="lg:hidden absolute top-[calc(10vh+65px)] right-6 w-[18%] h-[18%]"
         alt="Process NPC Image"
+        loading="lazy"
       />
       {/* timeline */}
       <div className="w-full lg:w-1/2 h-fit lg:h-full grid lg:place-items-center">
         <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:left-0 lg:scale-90">
           <li className="w-full relative -left-1/3">
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2" alt="Leaf" />
+              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
             </div>
             <div className="timeline-end ml-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
@@ -64,7 +66,7 @@ const Process = ({ displayToast }) => {
           <li className="w-full relative -left-1/3">
             <hr className="bg-green-500" />
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2" alt="Leaf" />
+              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
             </div>
             <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
@@ -83,7 +85,7 @@ const Process = ({ displayToast }) => {
           <li className="w-full relative -left-1/3">
             <hr className="bg-green-500" />
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2" alt="Leaf" />
+              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
             </div>
             <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
@@ -102,7 +104,7 @@ const Process = ({ displayToast }) => {
           <li className="w-full relative -left-1/3">
             <hr className="bg-green-500" />
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2" alt="Leaf" />
+              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
             </div>
             <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">

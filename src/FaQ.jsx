@@ -79,6 +79,7 @@ const FaQ = ({ displayToast }) => {
           src={FaQNPC}
           className="w-1/6 md:w-1/12 h-1/6 md:h-1/12 ml-auto"
           alt="About Us Image"
+          loading="lazy"
         />
       </div>
     </div>

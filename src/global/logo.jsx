@@ -1,4 +1,4 @@
-import logo from "../assets/images/global/logo.png";
+import logo from "../assets/images/global/logo.webp";
 
 const Header = () => {
   return (
@@ -34,7 +34,7 @@ const Header = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          <img src={logo} className="h-full" alt="Logo" />
+          <img src={logo} className="h-full" alt="Logo" loading="lazy" />
           Recyco
         </a>
       </div>

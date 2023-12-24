@@ -1,4 +1,4 @@
-import HeroImage from "./assets/images/Hero/Hero.png";
+import HeroImage from "./assets/images/Hero/Hero.webp";
 
 const Hero = ({ displayToast }) => {
   return (
@@ -35,6 +35,7 @@ const Hero = ({ displayToast }) => {
           src={HeroImage}
           className="w-full h-full object-center object-cover bg-no-repeat"
           alt="Hero Image"
+          loading="lazy"
         />
       </div>
     </div>

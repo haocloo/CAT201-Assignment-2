@@ -1,5 +1,5 @@
-import BenefitsImage from "./assets/images/Benefits/benefits.png";
-import Leaf from "./assets/images/Benefits/leaf.png";
+import BenefitsImage from "./assets/images/Benefits/benefits.webp";
+import Leaf from "./assets/images/Benefits/leaf.webp";
 
 const Benefits = () => {
   return (
@@ -19,19 +19,19 @@ const Benefits = () => {
         </p>
         <ul className="list-inside space-y-3">
           <div className="flex items-center space-x-3">
-            <img src={Leaf} alt="Leaf" />
+            <img src={Leaf} className="h-[7%] w-[7%] lg:h-[11%] lg:w-[11%]" alt="Leaf" loading="lazy" />
             <li className="text-justify text-xs sm:text-sm md:text-base lg:text-lg ">
               Eco-friendly materials for a greener future
             </li>
           </div>
           <div className="flex items-center space-x-3">
-            <img src={Leaf} alt="Leaf" />
+            <img src={Leaf} className="h-[7%] w-[7%] lg:h-[11%] lg:w-[11%]" alt="Leaf" loading="lazy" />
             <li className="text-justify text-xs sm:text-sm md:text-base lg:text-lg ">
               Support sustainable practices and responsible consumption
             </li>
           </div>
           <div className="flex items-center space-x-3">
-            <img src={Leaf} alt="Leaf" />
+            <img src={Leaf} className="h-[7%] w-[7%] lg:h-[11%] lg:w-[11%]" alt="Leaf" loading="lazy" />
             <li className="text-justify text-xs sm:text-sm md:text-base lg:text-lg ">
               Reduce waste and protect the environment
             </li>
@@ -44,6 +44,7 @@ const Benefits = () => {
           src={BenefitsImage}
           className="lg:rounded-3xl w-full h-full object-cover lg:object-contain object-center bg-no-repeat"
           alt="Benefits Image"
+          loading="lazy"
         />
       </div>
     </div>

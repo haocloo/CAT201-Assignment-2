@@ -1,4 +1,4 @@
-import MissionImage from "./assets/images/Mission/mission.png";
+import MissionImage from "./assets/images/Mission/mission.webp";
 
 const Mission = () => {
   const sections = [
@@ -36,6 +36,7 @@ const Mission = () => {
           src={MissionImage}
           className="hover:scale-110 transition-all delay-150 duration-300 ease-in-out lg:shadow-xl lg:shadow-black/40 lg:rounded-3xl w-full h-full object-center object-cover bg-no-repeat"
           alt="Mission Image"
+          loading="lazy"
         />
       </div>
     </div>

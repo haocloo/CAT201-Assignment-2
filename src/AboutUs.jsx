@@ -1,4 +1,4 @@
-import AboutUsImage from "./assets/images/AboutUs/about us.png";
+import AboutUsImage from "./assets/images/AboutUs/about us.webp";
 import AboutUsNPC from "./assets/images/AboutUs/about us npc.svg";
 
 const AboutUs = () => {
@@ -27,6 +27,7 @@ const AboutUs = () => {
             src={AboutUsNPC}
             className="self-end w-[40%] md:w-[20%] h-fit lg:w-1/2 lg:h-1/2 ml-auto"
             alt="About Us Image"
+            loading="lazy"
           />
         </div>
       </div>
@@ -35,6 +36,7 @@ const AboutUs = () => {
           src={AboutUsImage}
           className="w-full h-full object-center object-cover bg-no-repeat"
           alt="About Us Image"
+          loading="lazy"
         />
       </div>
     </div>

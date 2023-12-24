@@ -2,7 +2,7 @@ import video from "./assets/videos/HeroVideo.mp4";
 
 const HeroVideo = ({displayToast}) => {
   return (
-    <div className="relative h-screen pt-16 w-screen overflow-hidden">
+    <div id="HeroVideo" className="relative h-screen pt-16 w-screen overflow-hidden">
       <div className="absolute bg-black/20 lg:scale-125 top-16 z-10 w-full h-full flex text-center flex-col gap-5 justify-center items-center text-white">
         <h1 className="mx-auto text-5xl font-semibold font-sans">
           LET&apos;S RECYCLE TOGETHER

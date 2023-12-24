@@ -75,7 +75,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="flex flex-row items-center gap-3 btn btn-ghost">
+        <a href="#HeroVideo" className="flex flex-row items-center gap-3 btn btn-ghost">
           <img src={logo} className="h-8 w-8" alt="Logo" />
           <p className="text-2xl text-white">Recyco</p>
         </a>

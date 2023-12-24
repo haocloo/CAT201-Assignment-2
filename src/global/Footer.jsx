@@ -4,7 +4,7 @@ const Footer = ({ displayToast }) => {
   return (
     <footer id="#Footer" className="footer p-10 bg-[#242424] text-white">
       <a
-        href="#Hero"
+        href="#HeroVideo"
         className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
       >
         <img

@@ -66,6 +66,9 @@ const Header = ({ displayToast }) => {
                   <a href="#Process">Process</a>
                 </li>
                 <li>
+                  <a href="#Rating">Rating</a>
+                </li>
+                <li>
                   <a href="#Mission">Mission</a>
                 </li>
                 <li>
@@ -114,6 +117,9 @@ const Header = ({ displayToast }) => {
                 </li>
                 <li>
                   <a href="#Process">Process</a>
+                </li>
+                <li>
+                  <a href="#Rating">Rating</a>
                 </li>
                 <li>
                   <a href="#Mission">Mission</a>

@@ -55,9 +55,9 @@ const Team = ({ displayToast }) => {
   return (
     <div
       id="Team"
-      className="flex flex-col h-fit min-h-[calc(100vh-4rem)] justify-center items-center w-full px-10 lg:px-14 py-10 bg-green-200 text-black"
+      className="flex flex-col h-fit min-h-[calc(100vh-4rem)] justify-center items-center w-full px-10 lg:px-14 py-10 bg-gradient-to-r from-[#02285a]/90 to-[#026f13]/90 text-black"
     >
-      <div className="scale-125 h-2/6 lg:h-full text-center gap-3 ">
+      <div className="scale-125 h-2/6 lg:h-full text-center flex flex-col gap-1 text-white">
         <h3 className="text-lg sm:text-2xl">Sustainable</h3>
         <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
           Meet Our Team

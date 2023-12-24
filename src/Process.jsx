@@ -5,7 +5,7 @@ const Process = ({ displayToast }) => {
   return (
     <div
       id="Process"
-      className="relative flex flex-col lg:flex-row w-fit h-[calc(100vh-4rem)] bg-green-200"
+      className="relative flex flex-col lg:flex-row w-fit h-[calc(100vh-4rem)] bg-[#024b36] text-white"
     >
       <div className="flex flex-col gap-3 lg:gap-7 relative h-1/3 lg:h-full p-10 pb-0 lg:p-14 lg:pt-20 w-full lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Recycle</h3>
@@ -16,13 +16,13 @@ const Process = ({ displayToast }) => {
         <div className="flex flex-row gap-4">
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 md:px-4 md:py-4 border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg"
+            className="px-2 py-2 md:px-4 md:py-4 border border-white rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Learn More
           </button>
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+            className="px-2 py-2 space-x-4 md:px-4 md:py-4 rounded-lg text-xs md:text-sm lg:text-lg"
           >
             <span>Sign Up</span>
             <i className="fa fa-chevron-right"></i>
@@ -47,71 +47,91 @@ const Process = ({ displayToast }) => {
         <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:left-0 lg:scale-90">
           <li className="w-full relative -left-1/3">
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
+              <img
+                src={Leaf}
+                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                alt="Leaf"
+                loading="lazy"
+              />
             </div>
             <div className="timeline-end ml-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
-                <h3 className="font-black text-lg sm:text-xl md:text-2xl">
+                <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Collection Process
                 </h3>
-                <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                <p className="text-black text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
                   We collect recyclable materials from households and
                   businesses, ensuring proper sorting and handling.
                 </p>
               </div>
             </div>
-            <hr className="bg-green-500" />
+            <hr className="bg-secondary" />
           </li>
 
           <li className="w-full relative -left-1/3">
-            <hr className="bg-green-500" />
+            <hr className="bg-secondary" />
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
+              <img
+                src={Leaf}
+                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                alt="Leaf"
+                loading="lazy"
+              />
             </div>
             <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
-                <h3 className="font-black text-lg sm:text-xl md:text-2xl">
+                <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Transformation
                 </h3>
-                <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                <p className="text-black text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
                   The collected materials are processed and transformed into
                   high-quality sustainable products
                 </p>
               </div>
             </div>
-            <hr className="bg-green-500" />
+            <hr className="bg-secondary" />
           </li>
 
           <li className="w-full relative -left-1/3">
-            <hr className="bg-green-500" />
+            <hr className="bg-secondary" />
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
+              <img
+                src={Leaf}
+                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                alt="Leaf"
+                loading="lazy"
+              />
             </div>
             <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
-                <h3 className="font-black text-lg sm:text-xl md:text-2xl">
+                <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Final Product
                 </h3>
-                <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                <p className="text-black text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
                   Our final product are eco-friendly and contribute to a
                   greener, more sustainable future.
                 </p>
               </div>
             </div>
-            <hr className="bg-green-500" />
+            <hr className="bg-secondary" />
           </li>
 
           <li className="w-full relative -left-1/3">
-            <hr className="bg-green-500" />
+            <hr className="bg-secondary" />
             <div className="timeline-middle">
-              <img src={Leaf} className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]" alt="Leaf" loading="lazy" />
+              <img
+                src={Leaf}
+                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                alt="Leaf"
+                loading="lazy"
+              />
             </div>
             <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
               <div className="timeline-box">
-                <h3 className="font-black text-lg sm:text-xl md:text-2xl">
+                <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Educating Customers
                 </h3>
-                <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                <p className="text-black text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
                   We believe in raising awareness about recycling and its
                   positive impact on the environment.
                 </p>

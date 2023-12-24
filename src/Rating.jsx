@@ -1,6 +1,9 @@
 const Rating = () => {
   return (
-    <div id="Rating" className="flex flex-col h-[50vh] justify-center items-center gap-3 w-full py-10 bg-green-200">
+    <div
+      id="Rating"
+      className="flex flex-col h-[50vh] justify-center items-center gap-3 w-full py-10 bg-[#024b36]"
+    >
       <div className="rating rating-lg">
         <input
           type="radio"

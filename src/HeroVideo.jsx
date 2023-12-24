@@ -13,12 +13,12 @@ const HeroVideo = ({ displayToast }) => {
         <p className="text-3xl font-medium">
           Transforming Waste into Sustainable Solutions
         </p>
-        <button className="text-xl font-bold w-52 h-14 mt-4 border border-white text-white rounded">
+        <button className="hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] transition-all duration-300 ease-in text-xl font-bold w-52 h-14 mt-4 border border-white text-white rounded">
           <a href="#Hero">DISCOVER</a>
         </button>
         <button
           onClick={() => displayToast()}
-          className="text-lg font-bold w-52 h-14 bg-white border border-white text-black rounded"
+          className="hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] hover:text-white transition-all duration-300 ease-in text-lg font-bold w-52 h-14 bg-white border border-white text-black rounded"
         >
           LEARN MORE <i className="fa fa-play-circle h-5 w-5 ml-2"></i>
         </button>

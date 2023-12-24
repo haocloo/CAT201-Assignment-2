@@ -33,7 +33,7 @@ export default function App() {
     <>
       <ToastContainer />
       <Header />
-      <HeroVideo />
+      <HeroVideo displayToast={displayToast} />
       <Hero displayToast={displayToast} />
       <AboutUs />
       <Mission />

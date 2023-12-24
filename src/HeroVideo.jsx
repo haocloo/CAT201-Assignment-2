@@ -1,6 +1,6 @@
 import video from "./assets/videos/HeroVideo.mp4";
 
-const HeroVideo = () => {
+const HeroVideo = ({displayToast}) => {
   return (
     <div className="relative h-screen pt-16 w-screen overflow-hidden">
       <div className="absolute bg-black/20 lg:scale-125 top-16 z-10 w-full h-full flex text-center flex-col gap-5 justify-center items-center text-white">
@@ -10,10 +10,10 @@ const HeroVideo = () => {
         <p className="text-3xl font-medium">
           Transforming Waste into Sustainable Solutions
         </p>
-        <button className="text-xl font-bold w-52 h-14 mt-4 border border-white text-white rounded">
+        <button onClick={() => displayToast()} className="text-xl font-bold w-52 h-14 mt-4 border border-white text-white rounded">
           DISCOVER
         </button>
-        <button className="text-lg font-bold w-52 h-14 bg-white border border-white text-black rounded">
+        <button onClick={() => displayToast()} className="text-lg font-bold w-52 h-14 bg-white border border-white text-black rounded">
           LEARN MORE <i className="fa fa-play-circle h-5 w-5 ml-2"></i>
         </button>
       </div>

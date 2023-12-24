@@ -41,7 +41,7 @@ const Process = () => {
             <div className="timeline-middle">
               <img src={Leaf} className="my-2" alt="Leaf" />
             </div>
-            <div className="timeline-end ml-10 w-screen max-w-xs sm:max-w-md md:max-w-xl lg:max-w-xs xl:max-w-md 2xl:max-w-lg">
+            <div className="timeline-end ml-10 w-screen max-w-[70vw] lg:max-w-[35vw]">
               <div className="timeline-box">
                 <h3 className="font-black text-lg sm:text-xl md:text-2xl">
                   Collection Process
@@ -60,7 +60,7 @@ const Process = () => {
             <div className="timeline-middle">
               <img src={Leaf} className="my-2" alt="Leaf" />
             </div>
-            <div className="timeline-end mt-10 ml-10 w-screen max-w-xs sm:max-w-md md:max-w-xl lg:max-w-xs xl:max-w-md 2xl:max-w-lg">
+            <div className="timeline-end mt-10 ml-10 w-screen max-w-[70vw] lg:max-w-[35vw]">
               <div className="timeline-box">
                 <h3 className="font-black text-lg sm:text-xl md:text-2xl">
                   Transformation
@@ -79,7 +79,7 @@ const Process = () => {
             <div className="timeline-middle">
               <img src={Leaf} className="my-2" alt="Leaf" />
             </div>
-            <div className="timeline-end mt-10 ml-10 w-screen max-w-xs sm:max-w-md md:max-w-xl lg:max-w-xs xl:max-w-md 2xl:max-w-lg">
+            <div className="timeline-end mt-10 ml-10 w-screen max-w-[70vw] lg:max-w-[35vw]">
               <div className="timeline-box">
                 <h3 className="font-black text-lg sm:text-xl md:text-2xl">
                   Final Product
@@ -98,7 +98,7 @@ const Process = () => {
             <div className="timeline-middle">
               <img src={Leaf} className="my-2" alt="Leaf" />
             </div>
-            <div className="timeline-end mt-10 ml-10 w-screen max-w-xs sm:max-w-md md:max-w-xl lg:max-w-xs xl:max-w-md 2xl:max-w-lg">
+            <div className="timeline-end mt-10 ml-10 w-screen max-w-[70vw] lg:max-w-[35vw]">
               <div className="timeline-box">
                 <h3 className="font-black text-lg sm:text-xl md:text-2xl">
                   Educating Customers

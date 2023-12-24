@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed z-[999] navbar bg-gradient-to-r from-blue-900 to-green-700">
+    <div className="fixed z-[999] navbar bg-gradient-to-r from-[#02285a] to-[#026f13]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="Login" className="btn btn-ghost lg:hidden">
@@ -75,8 +75,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="flex flex-row items-center btn btn-ghost">
-          <img src={logo} className="h-7 w-7" alt="Logo" />
+        <a className="flex flex-row items-center gap-3 btn btn-ghost">
+          <img src={logo} className="h-8 w-8" alt="Logo" />
           <p className="text-2xl text-white">Recyco</p>
         </a>
       </div>
@@ -85,7 +85,7 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <details className=" mx-1">
-              <summary className=" text-white">Services</summary>
+              <summary className=" text-white text-lg">Services</summary>
               <ul className="p-2">
                 <li>
                   <a href="#Products">Products</a>
@@ -104,7 +104,7 @@ const Header = () => {
           </li>
           <li>
             <details className="mx-1">
-              <summary className="text-white">Company</summary>
+              <summary className="text-white text-lg">Company</summary>
               <ul className="p-2">
                 <li>
                   <a href="#AboutUs">About Us</a>
@@ -124,7 +124,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-transparent text-white">LOGIN</a>
+        <a className="btn bg-transparent text-white text-lg">LOGIN</a>
       </div>
     </div>
   );

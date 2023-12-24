@@ -14,7 +14,10 @@ const Mission = () => {
     },
   ];
   return (
-    <div id="Mission" className="flex flex-col-reverse lg:flex-row w-full items-center">
+    <div
+      id="Mission"
+      className="flex flex-col-reverse lg:flex-row w-full items-center"
+    >
       <div className="flex flex-col gap-3 lg:gap-14 lg:justify-center lg:h-[100vh] p-8 w-full lg:w-1/2 text-left">
         {sections.map((section, index) => (
           <div key={index}>
@@ -31,7 +34,7 @@ const Mission = () => {
       <div className="lg:p-24 lg:px-8 w-full h-72 lg:h-[100vh] lg:w-1/2">
         <img
           src={MissionImage}
-          className="lg:rounded-3xl w-full h-full object-center object-cover bg-no-repeat"
+          className="hover:scale-110 transition-all delay-150 duration-300 ease-in-out shadow-xl shadow-black/40 lg:rounded-3xl w-full h-full object-center object-cover bg-no-repeat"
           alt="Mission Image"
         />
       </div>

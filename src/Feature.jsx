@@ -26,10 +26,10 @@ const Feature = () => {
       </div>
 
       <div className="hidden lg:block -mt-24 relative h-full w-1/2 ">
-        <div className="ml-16 xl:ml-28 top-[100px] left-[188px] xl:left-[218px] bg-[url(./assets/images/Feature/product1.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-10"></div>
-        <div className="ml-16 xl:ml-28 top-[260px] left-0                       bg-[url(./assets/images/Feature/product2.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-8"></div>
-        <div className="ml-16 xl:ml-28 top-[420px] left-[188px] xl:left-[218px] bg-[url(./assets/images/Feature/product3.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-9"></div>
-        <div className="ml-16 xl:ml-28 top-[580px] left-0                       bg-[url(./assets/images/Feature/product4.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-10"></div>
+        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[100px] left-[188px] xl:left-[218px] bg-[url(./assets/images/Feature/product1.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-10"></div>
+        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[260px] left-0                       bg-[url(./assets/images/Feature/product2.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-8"></div>
+        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[420px] left-[188px] xl:left-[218px] bg-[url(./assets/images/Feature/product3.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-9"></div>
+        <div className="hover:scale-125 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[580px] left-0                       bg-[url(./assets/images/Feature/product4.png)] absolute w-64 h-64 rounded-full overflow-hidden shadow-[4px_8px_10px_#0000004c] bg-cover bg-[50%_50%] z-10"></div>
       </div>
 
       <div className="lg:hidden relative w-full h-32 md:h-48 flex flex-row">

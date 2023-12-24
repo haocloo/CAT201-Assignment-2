@@ -7,8 +7,8 @@ const Footer = () => {
         href="#Hero"
         className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
       >
-        <img src={logo} className="h-28 -mt-5 -mr-4" alt="Logo" />
-        <p className="-mt-6 -mr-3 font-bold text-black text-2xl">Recyco</p>
+        <img src={logo} className="h-32 w-36 scale-[60%] -mt-5 -mr-4" alt="Logo" />
+        <p className="-mt-7 -mr-3 font-bold text-black text-2xl">Recyco</p>
       </a>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 md:pr-28 sm:pr-10">
         <nav className="flex flex-col gap-5">

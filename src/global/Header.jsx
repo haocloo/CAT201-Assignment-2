@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import logo from "../assets/images/global/logo.png";
 
-const Header = () => {
+const Header = ({ displayToast }) => {
   useEffect(() => {
     var details = [...document.querySelectorAll("details")];
     document.addEventListener("click", function (e) {
@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed z-[999] navbar bg-gradient-to-r from-[#02285a] to-[#026f13]">
+    <div className="fixed z-[999] h-16 navbar bg-gradient-to-r from-[#02285a] to-[#026f13]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="Login" className="btn btn-ghost lg:hidden">
@@ -75,7 +75,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a href="#HeroVideo" className="flex flex-row items-center gap-3 btn btn-ghost">
+        <a
+          href="#HeroVideo"
+          className="flex flex-row items-center gap-3 btn btn-ghost"
+        >
           <img src={logo} className="h-8 w-8" alt="Logo" />
           <p className="text-2xl text-white">Recyco</p>
         </a>
@@ -124,7 +127,12 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-transparent text-white text-lg">LOGIN</a>
+        <button
+          onClick={() => displayToast()}
+          className="btn bg-transparent text-white text-lg"
+        >
+          LOGIN
+        </button>
       </div>
     </div>
   );

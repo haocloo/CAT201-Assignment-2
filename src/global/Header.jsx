@@ -87,45 +87,45 @@ const Header = ({ displayToast }) => {
         </a>
       </div>
 
-      <div className="navbar-center hidden lg:flex font-bold">
+      <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
             <details className=" mx-1">
-              <summary className=" text-white text-lg">Services</summary>
+              <summary className=" text-white text-lg font-bold">Services</summary>
               <ul className="p-2">
                 <li>
-                  <a href="#Products">Products</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Products">Products</a>
                 </li>
                 <li>
-                  <a href="#Benefits">Benefits</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Benefits">Benefits</a>
                 </li>
                 <li>
-                  <a href="#Features">Features</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Features">Features</a>
                 </li>
                 <li>
-                  <a href="#FaQ">FAQs</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#FaQ">FAQs</a>
                 </li>
               </ul>
             </details>
           </li>
           <li>
             <details className="mx-1">
-              <summary className="text-white text-lg">Company</summary>
+              <summary className="text-white text-lg font-bold">Company</summary>
               <ul className="p-2">
                 <li>
-                  <a href="#AboutUs">About Us</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#AboutUs">About Us</a>
                 </li>
                 <li>
-                  <a href="#Process">Process</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Process">Process</a>
                 </li>
                 <li>
-                  <a href="#Rating">Rating</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Rating">Rating</a>
                 </li>
                 <li>
-                  <a href="#Mission">Mission</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Mission">Mission</a>
                 </li>
                 <li>
-                  <a href="#Team">Team</a>
+                  <a className="hover:bg-green-600/50 hover:text-black" href="#Team">Team</a>
                 </li>
               </ul>
             </details>

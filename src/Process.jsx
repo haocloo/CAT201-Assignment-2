@@ -7,22 +7,22 @@ const Process = ({ displayToast }) => {
       id="Process"
       className="relative flex flex-col lg:flex-row w-fit h-[calc(100vh-4rem)] bg-[#024b36] text-white"
     >
-      <div className="flex flex-col gap-3 lg:gap-7 relative h-1/3 lg:h-full p-10 pb-0 lg:p-14 lg:pt-20 w-full lg:w-1/2 text-left">
+      <div className="flex flex-col gap-3 lg:gap-7 relative h-1/3 lg:h-full p-10 pl-5 pt-5 pb-0 lg:p-14 lg:pt-20 w-full lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Recycle</h3>
-        <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+        <h1 className="font-bold pr-5 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Transforming Waste into Sustainable Products
         </h1>
 
         <div className="flex flex-row gap-4">
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 md:px-4 md:py-4 border border-white rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:outline-primary hover:font-bold hover:border-[#024b36] hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-2 py-2 md:px-4 md:py-4 border border-white rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Learn More
           </button>
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 space-x-4 md:px-4 md:py-4 rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:font-bold transition-all ease-in-out duration-300 px-2 py-2 space-x-4 md:px-4 md:py-4 rounded-lg text-xs md:text-sm lg:text-lg"
           >
             <span>Sign Up</span>
             <i className="fa fa-chevron-right"></i>
@@ -36,26 +36,26 @@ const Process = ({ displayToast }) => {
           loading="lazy"
         />
       </div>
-      <img
-        src={ProcessNPC}
-        className="lg:hidden absolute top-[calc(10vh+65px)] right-6 w-[18%] h-[18%]"
-        alt="Process NPC Image"
-        loading="lazy"
-      />
       {/* timeline */}
-      <div className="w-full lg:w-1/2 h-fit lg:h-full grid lg:place-items-center">
+      <div className="w-full lg:w-1/2 h-fit md:h-full grid lg:place-items-center">
         <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:left-0 lg:scale-90">
-          <li className="w-full relative -left-1/3">
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
-              <div className="timeline-box">
+            <div className="timeline-end ml-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
+              <div className="relative timeline-box">
+                <img
+                  src={ProcessNPC}
+                  className="lg:hidden absolute -mt-36 top-0 -right-6 w-36 h-36"
+                  alt="Process NPC Image"
+                  loading="lazy"
+                />
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Collection Process
                 </h3>
@@ -65,20 +65,20 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
-          <li className="w-full relative -left-1/3">
-            <hr className="bg-secondary" />
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
+            <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Transformation
@@ -89,20 +89,20 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
-          <li className="w-full relative -left-1/3">
-            <hr className="bg-secondary" />
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
+            <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Final Product
@@ -113,20 +113,20 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
-          <li className="w-full relative -left-1/3">
-            <hr className="bg-secondary" />
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
+            <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-12rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Educating Customers

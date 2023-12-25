@@ -6,7 +6,7 @@ const Hero = ({ displayToast }) => {
       id="Hero"
       className="flex flex-col-reverse lg:flex-row w-full h-[calc(100vh-4rem)]"
     >
-      <div className="scale-105 flex flex-col gap-3 lg:gap-7 justify-center h-1/3 lg:h-full p-10 sm:px-16 lg:p-14 w-full lg:w-1/2 text-left">
+      <div className="lg:scale-105 flex flex-col gap-3 lg:gap-7 justify-center h-full lg:h-full p-10 sm:px-16 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Transforming Waste into Sustainable Solutions
         </h1>
@@ -19,13 +19,10 @@ const Hero = ({ displayToast }) => {
         </p>
 
         <div className="flex flex-row gap-4 ">
-          <button className="px-6 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg">
+          <button className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg">
             <a href="#AboutUs">Discover</a>
           </button>
-          <button
-            onClick={() => displayToast()}
-            className="px-2 py-2 md:px-4 md:py-4 bg-secondary border border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
-          >
+          <button className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-secondary text-black rounded-lg text-xs md:text-sm lg:text-lg">
             Learn More
           </button>
         </div>

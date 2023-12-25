@@ -71,9 +71,9 @@ const Rating = () => {
   return (
     <div
       id="Rating"
-      className="flex flex-col h-fit justify-center items-center w-screen p-10 bg-[#024b36]"
+      className="flex flex-col h-fit min-h-[calc(100vh-4rem)] justify-center items-center w-screen p-10 bg-[#024b36]"
     >
-      <p className="text-2xl md:text-3xl py-3 text-white font-bold">
+      <p className="text-2xl md:text-3xl mb-10 text-white font-bold">
         What Our Customers Say
       </p>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-9 justify-items-center items-center h-full w-full">
@@ -85,7 +85,7 @@ const Rating = () => {
           portrait={portrait1}
           name={"John Doe"}
           title={"CEO of Golden Ball Inc."}
-          />
+        />
 
         <Card
           logo={companyLogo2}

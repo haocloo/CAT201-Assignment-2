@@ -98,7 +98,8 @@ const Team = ({ displayToast }) => {
           description="Jia Liang brings creativity and innovation to our product design process."
           initialPos="translate-y-[67%] md:translate-y-[71%] lg:translate-y-[67%]"
           socmed={{
-            linkedin: "",
+            linkedin:
+              "https://www.linkedin.com/in/lim-jia-liang-km-pelajar-b9330725a/",
             github: "https://github.com/LIMJIALIANG",
             email: "limjialiang1067@student.usm.my",
           }}
@@ -123,7 +124,7 @@ const Team = ({ displayToast }) => {
         </h1>
         <button
           onClick={() => displayToast()}
-          className="px-2 py-2 md:px-8 md:py-4 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
+          className="hover:outline-primary hover:scale-95 hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-8 md:py-4 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
         >
           Contact
         </button>

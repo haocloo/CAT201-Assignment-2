@@ -2,7 +2,7 @@ import Header from "./global/Header";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import Mission from "./Mission";
-import Feature from "./Feature";
+import Features from "./Features";
 import Benefits from "./Benefits";
 import Process from "./Process";
 import Products from "./Products";
@@ -34,7 +34,7 @@ export default function App() {
     Hero,
     AboutUs,
     Mission,
-    Feature,
+    Features,
     Benefits,
     Process,
     Products,

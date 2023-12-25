@@ -7,9 +7,9 @@ const Process = ({ displayToast }) => {
       id="Process"
       className="relative flex flex-col lg:flex-row w-fit h-[calc(100vh-4rem)] bg-[#024b36] text-white"
     >
-      <div className="flex flex-col gap-3 lg:gap-7 relative h-1/3 lg:h-full p-10 pb-0 lg:p-14 lg:pt-20 w-full lg:w-1/2 text-left">
+      <div className="flex flex-col gap-3 lg:gap-7 relative h-1/3 lg:h-full p-10 pl-5 pt-5 pb-0 lg:p-14 lg:pt-20 w-full lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Recycle</h3>
-        <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+        <h1 className="font-bold pr-5 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Transforming Waste into Sustainable Products
         </h1>
 
@@ -37,13 +37,13 @@ const Process = ({ displayToast }) => {
         />
       </div>
       {/* timeline */}
-      <div className="w-full lg:w-1/2 h-fit lg:h-full grid lg:place-items-center">
+      <div className="w-full lg:w-1/2 h-fit md:h-full grid lg:place-items-center">
         <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:left-0 lg:scale-90">
-          <li className="w-full relative -left-1/3">
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
@@ -52,7 +52,7 @@ const Process = ({ displayToast }) => {
               <div className="relative timeline-box">
                 <img
                   src={ProcessNPC}
-                  className="lg:hidden absolute -mt-40 top-0 -right-6 w-40 h-40"
+                  className="lg:hidden absolute -mt-36 top-0 -right-6 w-36 h-36"
                   alt="Process NPC Image"
                   loading="lazy"
                 />
@@ -68,12 +68,12 @@ const Process = ({ displayToast }) => {
             <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
-          <li className="w-full relative -left-1/3">
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
             <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
@@ -92,12 +92,12 @@ const Process = ({ displayToast }) => {
             <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
-          <li className="w-full relative -left-1/3">
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
             <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
@@ -116,12 +116,12 @@ const Process = ({ displayToast }) => {
             <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
-          <li className="w-full relative -left-1/3">
+          <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
             <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[60%] w-[65%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />

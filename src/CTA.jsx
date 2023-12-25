@@ -18,7 +18,7 @@ const CTA = ({ displayToast }) => {
         <div className="flex flex-row gap-4 ">
           <button
             onClick={() => displayToast()}
-            className="hover:outline-primary hover:font-bold hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:outline-primary hover:font-bold hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-10 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Join
           </button>

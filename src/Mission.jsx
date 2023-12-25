@@ -18,7 +18,7 @@ const Mission = () => {
       id="Mission"
       className="flex flex-col-reverse lg:flex-row w-full items-center h-[calc(100vh-4rem)]"
     >
-      <div className="scale-105 flex flex-col justify-center gap-3 lg:gap-14 lg:justify-center h-1/2 lg:h-[100vh] p-10 sm:px-16 lg:p-14 w-full lg:w-1/2 text-left">
+      <div className="scale-105 flex flex-col justify-center gap-3 lg:gap-14 lg:justify-center h-1/2 lg:h-[100vh] p-10 sm:px-16 lg:p-16 w-full lg:w-1/2 text-left">
         {sections.map((section, index) => (
           <div key={index}>
             <h1 className="mb-4 font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">

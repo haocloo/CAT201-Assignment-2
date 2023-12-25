@@ -4,11 +4,11 @@ const Footer = ({ displayToast }) => {
   return (
     <footer
       id="#Footer"
-      className="footer p-5 md:p-10 bg-[#242424] text-white w-screen"
+      className="footer p-5 md:p-10 bg-[#242424] text-white w-screen grid place-items-center"
     >
       <a
         href="#HeroVideo"
-        className="pointer flex flex-row md:flex-col items-center justify-center mr-16 -ml-6 md:ml-0"
+        className="pointer flex flex-row md:flex-col items-center justify-start h-full mr-16 -ml-6 md:ml-0"
       >
         <img
           src={logo}
@@ -41,6 +41,9 @@ const Footer = ({ displayToast }) => {
           </a>
           <a href="#Process" className="link link-hover">
             Process
+          </a>
+          <a href="#Rating" className="link link-hover">
+            Rating
           </a>
           <a href="#Mission" className="link link-hover">
             Mission

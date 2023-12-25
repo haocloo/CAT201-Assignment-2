@@ -38,7 +38,7 @@ const Process = ({ displayToast }) => {
       </div>
       {/* timeline */}
       <div className="w-full lg:w-1/2 h-fit md:h-full grid lg:place-items-center">
-        <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:left-0 lg:scale-90">
+        <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:-left-[7%] lg:scale-90">
           <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
             <div className="timeline-middle">
               <img
@@ -65,11 +65,11 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary ml-10 md:ml-0" />
+            <hr className="bg-secondary ml-10 md:ml-0 lg:ml-4" />
           </li>
 
           <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
-            <hr className="bg-secondary ml-10 md:ml-0" />
+            <hr className="bg-secondary ml-10 md:ml-0 lg:ml-4" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
@@ -89,11 +89,11 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary ml-10 md:ml-0" />
+            <hr className="bg-secondary ml-10 md:ml-0 lg:ml-4" />
           </li>
 
           <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
-            <hr className="bg-secondary ml-10 md:ml-0" />
+            <hr className="bg-secondary ml-10 md:ml-0 lg:ml-4" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
@@ -113,11 +113,11 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary ml-10 md:ml-0" />
+            <hr className="bg-secondary ml-10 md:ml-0 lg:ml-4" />
           </li>
 
           <li className="-mt-3 lg:mt-0 w-full relative -left-1/3">
-            <hr className="bg-secondary ml-10 md:ml-0" />
+            <hr className="bg-secondary ml-10 md:ml-0 lg:ml-4" />
             <div className="timeline-middle">
               <img
                 src={Leaf}

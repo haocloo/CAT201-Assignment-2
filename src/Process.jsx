@@ -36,12 +36,6 @@ const Process = ({ displayToast }) => {
           loading="lazy"
         />
       </div>
-      <img
-        src={ProcessNPC}
-        className="lg:hidden absolute top-[calc(10vh+65px)] right-6 w-[18%] h-[18%]"
-        alt="Process NPC Image"
-        loading="lazy"
-      />
       {/* timeline */}
       <div className="w-full lg:w-1/2 h-fit lg:h-full grid lg:place-items-center">
         <ul className="timeline timeline-vertical scale-[85%] -left-[12%] sm:-left-[15%] lg:left-0 lg:scale-90">
@@ -49,13 +43,19 @@ const Process = ({ displayToast }) => {
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
-              <div className="timeline-box">
+            <div className="timeline-end ml-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
+              <div className="relative timeline-box">
+                <img
+                  src={ProcessNPC}
+                  className="lg:hidden absolute -mt-40 top-0 -right-6 w-40 h-40"
+                  alt="Process NPC Image"
+                  loading="lazy"
+                />
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Collection Process
                 </h3>
@@ -65,20 +65,20 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
           <li className="w-full relative -left-1/3">
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Transformation
@@ -89,20 +89,20 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
           <li className="w-full relative -left-1/3">
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Final Product
@@ -113,20 +113,20 @@ const Process = ({ displayToast }) => {
                 </p>
               </div>
             </div>
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
           </li>
 
           <li className="w-full relative -left-1/3">
-            <hr className="bg-secondary" />
+            <hr className="bg-secondary ml-10 md:ml-0" />
             <div className="timeline-middle">
               <img
                 src={Leaf}
-                className="my-2 ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
+                className="my-2 ml-10 lg:ml-3 -mr-3 md:mx-0 h-[75%] w-[75%] md:h-[95%] md:w-[95%]"
                 alt="Leaf"
                 loading="lazy"
               />
             </div>
-            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-4rem)] lg:w-[calc(50vw-14rem)]">
+            <div className="timeline-end ml-10 mt-10 w-[calc(100vw-6rem)] lg:w-[calc(50vw-14rem)]">
               <div className="timeline-box">
                 <h3 className="text-black font-black text-lg sm:text-xl md:text-2xl">
                   Educating Customers

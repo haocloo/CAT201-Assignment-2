@@ -54,9 +54,9 @@ const Footer = ({ displayToast }) => {
         </nav>
         <nav className="flex flex-col gap-5">
           <header className="footer-title text-white text-lg">Legal</header>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <a onClick={() => displayToast()} className="link link-hover">Terms of use</a>
+          <a onClick={() => displayToast()} className="link link-hover">Privacy policy</a>
+          <a onClick={() => displayToast()} className="link link-hover">Cookie policy</a>
         </nav>
         <form className="w-full">
           <header className="footer-title text-white text-lg">

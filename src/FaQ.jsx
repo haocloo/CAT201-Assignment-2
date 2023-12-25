@@ -37,7 +37,7 @@ const FaQ = ({ displayToast }) => {
       id="FaQ"
       className="flex flex-col justify-center items-center gap-5 px-10 pt-10"
     >
-      <div className="scale-105">
+      <div className="scale-105 space-y-4">
         <h1 className="font-bold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Frequently Asked Questions
         </h1>
@@ -62,22 +62,20 @@ const FaQ = ({ displayToast }) => {
         </div>
       ))}
 
-      <div className="flex flex-row items-start my-5 w-full ">
-        <div className="space-y-5">
-          <h1 className="font-extrabold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-            Still have questions?
-          </h1>
-          <p>Contact us for more details</p>
-          <button
-            onClick={() => displayToast()}
-            className="hover:outline-primary hover:font-bold hover:border-secondary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-4 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
-          >
-            Contact
-          </button>
-        </div>
+      <div className="relative flex flex-col gap-5 items-center justify-center my-5 w-full ">
+        <h1 className="font-extrabold text-black text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl">
+          Still have questions?
+        </h1>
+        <p className="text-md sm:text-xl md:text-2xl 2xl:text-3xl">Contact us for more details</p>
+        <button
+          onClick={() => displayToast()}
+          className="hover:outline-primary hover:font-bold hover:border-secondary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-4 md:py-2 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+        >
+          Contact
+        </button>
         <img
           src={FaQNPC}
-          className="w-1/6 md:w-1/12 h-1/6 md:h-1/12 ml-auto"
+          className="absolute -right-4 sm:right-14 md:right-1/5 lg:right-1/4 -bottom-5 h-[110%]"
           alt="About Us Image"
           loading="lazy"
         />

@@ -45,8 +45,8 @@ const Stars = () => {
 
 const Card = ({ logo, desc, portrait, name, title }) => {
   return (
-    <div className="hover:scale-110 hover:shadow-green-300 transition-all ease-in-out duration-300 grid shadow-xl shadow-white/30 rounded-lg h-[90%] w-[28vh] bg-white gap-5 px-5 py-4 my-10 items-center justify-items-center text-center">
-      <div className="space-y-3 mb-5">
+    <div className="hover:scale-110 hover:shadow-green-300 transition-all ease-in-out duration-300 flex flex-col justify-around shadow-xl shadow-white/30 rounded-lg h-[90%] w-[28vh] bg-white gap-5 px-5 py-8 lg:mt-0 lg:mb-0 my-10 text-center">
+      <div className="space-y-5">
         <img
           src={logo}
           className="mx-auto bg-no-repeat bg-center bg-cover h-16 w-16"
@@ -55,25 +55,28 @@ const Card = ({ logo, desc, portrait, name, title }) => {
         <Stars />
         <p>{desc}</p>
       </div>
-      <img
-        src={portrait}
-        className="bg-no-repeat bg-cover bg-center rounded-full h-24 w-20"
-        loading="lazy"
-      ></img>
-      <div>
-        <p className="font-bold">{name}</p>
-        <p>{title}</p>
+      <div className="space-y-5">
+        <img
+          src={portrait}
+          className="bg-no-repeat bg-cover bg-center mx-auto rounded-full h-24 w-20"
+          loading="lazy"
+        ></img>
+        <div>
+          <p className="font-bold">{name}</p>
+          <p>{title}</p>
+        </div>
       </div>
     </div>
   );
 };
+
 const Rating = () => {
   return (
     <div
       id="Rating"
-      className="flex flex-col h-fit min-h-[calc(100vh-4rem)] justify-center items-center w-screen p-10 bg-[#024b36]"
+      className="flex flex-col h-fit min-h-[calc(100vh-4rem)] lg:h-[calc(100vh-4rem)] justify-center items-center gap-2 w-screen p-10 bg-[#024b36]"
     >
-      <p className="text-2xl md:text-3xl mb-10 text-white font-bold">
+      <p className="text-2xl md:text-3xl w-full text-center text-white font-bold">
         What Our Customers Say
       </p>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-9 justify-items-center items-center h-full w-full">
@@ -84,7 +87,7 @@ const Rating = () => {
           }
           portrait={portrait1}
           name={"John Doe"}
-          title={"CEO of Golden Ball Inc."}
+          title={"CEO of Blue Falcon Co."}
         />
 
         <Card
@@ -104,7 +107,7 @@ const Rating = () => {
           }
           portrait={portrait3}
           name={"Alex Taylor"}
-          title={"CEO of Blue Falcon Co."}
+          title={"CEO of Golden Ball Inc."}
         />
       </div>
     </div>

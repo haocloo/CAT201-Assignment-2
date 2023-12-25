@@ -31,11 +31,11 @@ const Features = ({ handleClick }) => {
         </div>
       </div>
 
-      <div className="hidden lg:flex flex-col justify-center items-center relative h-full w-1/2 ">
-        <div className="absolute hover:scale-110 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[3%]  left-[30%] xl:left-[33%] bg-[url(./assets/images/Feature/product1.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-10"></div>
-        <div className="absolute hover:scale-110 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[22%] left-0     xl:left-[10%] bg-[url(./assets/images/Feature/product2.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-8"></div>
-        <div className="absolute hover:scale-110 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[42%] left-[30%] xl:left-[33%] bg-[url(./assets/images/Feature/product3.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-9"></div>
-        <div className="absolute hover:scale-110 scale-90 xl:scale-100 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[62%] left-0     xl:left-[10%] bg-[url(./assets/images/Feature/product4.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-10"></div>
+      <div className="hidden lg:flex flex-col xl:-mt-6 xl:scale-90 justify-center items-center relative h-full w-1/2 ">
+        <div className="absolute hover:scale-110 scale-90 2xl:scale-110 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[3%]  left-[30%] xl:left-[33%] bg-[url(./assets/images/Feature/product1.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-10"></div>
+        <div className="absolute hover:scale-110 scale-90 2xl:scale-110 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[22%] left-0     xl:left-[10%] bg-[url(./assets/images/Feature/product2.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-8"></div>
+        <div className="absolute hover:scale-110 scale-90 2xl:scale-110 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[42%] left-[30%] xl:left-[33%] bg-[url(./assets/images/Feature/product3.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-9"></div>
+        <div className="absolute hover:scale-110 scale-90 2xl:scale-110 transition-all duration-500 ease-in-out ml-16 xl:ml-28 top-[62%] left-0     xl:left-[10%] bg-[url(./assets/images/Feature/product4.webp)] w-64 h-64 rounded-full shadow-[4px_8px_10px_#0000004c] bg-cover z-10"></div>
       </div>
 
       <div className="lg:hidden relative w-full h-1/2 flex flex-row items-center">

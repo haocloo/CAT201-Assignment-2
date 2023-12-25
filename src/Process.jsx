@@ -5,7 +5,7 @@ const Process = ({ displayToast }) => {
   return (
     <div
       id="Process"
-      className="relative flex flex-col lg:flex-row w-fit max-h-fit min-h-[calc(100vh-4rem)] bg-[#024b36] text-white"
+      className="relative flex flex-col lg:flex-row w-fit max-h-fit min-h-[calc(100vh-4rem)] lg:h-[calc(100vh-4rem)] bg-[#024b36] text-white"
     >
       <div className="flex flex-col gap-3 lg:gap-7 relative h-1/3 lg:h-full p-10 pl-5 pt-5 pb-0 lg:p-14 lg:pt-20 w-full lg:w-1/2 text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl">Recycle</h3>
@@ -31,7 +31,7 @@ const Process = ({ displayToast }) => {
 
         <img
           src={ProcessNPC}
-          className="hidden lg:flex absolute bottom-0 translate-x-1/2 w-1/4 h-1/4 lg:w-2/5 lg:h-2/5"
+          className="hidden lg:flex absolute bottom-0 translate-x-[80%] w-1/4 h-1/4 lg:w-2/5 lg:h-2/5"
           alt="Process NPC Image"
           loading="lazy"
         />

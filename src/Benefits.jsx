@@ -5,7 +5,7 @@ const Benefits = () => {
   return (
     <div
       id="Benefits"
-      className="flex flex-col-reverse lg:flex-row w-full pt-5 sm:pt-0 items-center max-h-fit min-h-[calc(100vh-4rem)]"
+      className="flex flex-col-reverse lg:flex-row w-full sm:pt-0 items-center h-[calc(100vh-4rem)]"
     >
       <div className="flex flex-col gap-6 lg:gap-9 justify-center h-1/2 lg:h-full px-6 pr-16 my-5 ml-10 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
@@ -53,11 +53,10 @@ const Benefits = () => {
           </div>
         </ul>
       </div>
-
-      <div className="lg:p-24 lg:px-8 w-full h-1/2 lg:h-full lg:w-1/2">
+      <div className="w-full h-1/2 lg:h-full lg:w-1/2">
         <img
           src={BenefitsImage}
-          className="lg:rounded-3xl w-full h-full object-cover lg:object-contain object-center bg-no-repeat"
+          className="lg:scale-75 w-full h-full object-center object-cover bg-no-repeat"
           alt="Benefits Image"
           loading="lazy"
         />

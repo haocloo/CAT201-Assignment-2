@@ -9,7 +9,7 @@ const AboutUs = () => {
     >
       <div className="grid lg:gap-7 h-1/2 lg:h-full p-10 pb-0 sm:px-16 lg:p-14 lg:pb-0 w-full lg:w-1/2 text-left">
         <div className="scale-105 h-1/2">
-          <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+          <h1 className="-mt-4 mb-4 font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
             About us
           </h1>
           <p className="text-justify text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">

@@ -116,7 +116,7 @@ const Team = ({ displayToast }) => {
         />
       </div>
 
-      <div className="scale-125 h-1/6 mt-5 text-white text-center space-y-5">
+      <div className="scale-125 h-1/6 -mt-20 sm:mt-5 md:mb-0 mb-12 text-white text-center space-y-5">
         <h1 className="font-bold text-3xl">We&apos;re Hiring!</h1>
         <button
           onClick={() => displayToast()}

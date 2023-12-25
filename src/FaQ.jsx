@@ -62,11 +62,13 @@ const FaQ = ({ displayToast }) => {
         </div>
       ))}
 
-      <div className="relative flex flex-col gap-5 items-center justify-center my-5 w-full ">
+      <div className="relative flex flex-col gap-5 items-center justify-center mb-32 mt-12 w-full ">
         <h1 className="font-extrabold text-black text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl">
           Still have questions?
         </h1>
-        <p className="text-md sm:text-xl md:text-2xl 2xl:text-3xl">Contact us for more details</p>
+        <p className="text-md sm:text-xl md:text-2xl 2xl:text-3xl">
+          Contact us for more details
+        </p>
         <button
           onClick={() => displayToast()}
           className="hover:outline-primary hover:font-bold hover:border-secondary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-4 md:py-2 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
@@ -75,7 +77,7 @@ const FaQ = ({ displayToast }) => {
         </button>
         <img
           src={FaQNPC}
-          className="absolute -right-4 sm:right-14 md:right-1/5 lg:right-1/4 -bottom-5 h-[110%]"
+          className="absolute -right-4 sm:right-14 md:right-1/5 lg:right-1/4 -bottom-32 h-[140%]"
           alt="About Us Image"
           loading="lazy"
         />

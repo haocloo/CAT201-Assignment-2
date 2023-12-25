@@ -27,7 +27,7 @@ const Footer = ({ displayToast }) => {
           <a href="#Benefits" className="link link-hover">
             Benefits
           </a>
-          <a href="#Feature" className="link link-hover">
+          <a href="#Features" className="link link-hover">
             Features
           </a>
           <a href="#FaQ" className="link link-hover">

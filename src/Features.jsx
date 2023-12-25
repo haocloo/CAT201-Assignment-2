@@ -1,7 +1,7 @@
-const Feature = ({ handleClick }) => {
+const Features = ({ handleClick }) => {
   return (
     <div
-      id="Feature"
+      id="Features"
       className="flex flex-col-reverse lg:flex-row w-full h-[calc(100vh-4rem)]"
     >
       <div className="flex flex-col gap-3 lg:gap-7 lg:justify-center h-1/3 lg:h-full px-10 my-5 lg:p-14 w-full lg:w-1/2 text-left">
@@ -48,4 +48,4 @@ const Feature = ({ handleClick }) => {
   );
 };
 
-export default Feature;
+export default Features;

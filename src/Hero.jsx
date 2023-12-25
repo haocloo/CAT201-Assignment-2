@@ -22,7 +22,10 @@ const Hero = ({ displayToast }) => {
           <button className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg">
             <a href="#AboutUs">Discover</a>
           </button>
-          <button className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-secondary text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button
+            onClick={() => displayToast()}
+            className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-secondary text-black rounded-lg text-xs md:text-sm lg:text-lg"
+          >
             Learn More
           </button>
         </div>

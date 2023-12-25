@@ -57,12 +57,10 @@ const Team = ({ displayToast }) => {
       id="Team"
       className="flex flex-col h-fit min-h-[calc(100vh-4rem)] justify-center items-center w-full px-10 lg:px-14 py-10 bg-gradient-to-r from-[#02285a]/90 to-[#026f13]/90 text-black"
     >
-      <div className="scale-125 h-2/6 lg:h-full text-center flex flex-col gap-1 text-white">
-        <h3 className="text-lg sm:text-2xl">Sustainable</h3>
-        <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
-          Meet Our Team
-        </h1>
-        <p className="text-justify text-xs sm:text-lg xl:text-xl">
+      <div className="scale-125 h-2/6 lg:h-full w-full px-3 sm:px-10 text-center flex flex-col gap-2 text-white">
+        <h3 className="text-xl">Sustainable</h3>
+        <h1 className="font-bold text-4xl">Meet Our Team</h1>
+        <p className="text-center text-lg">
           Passionate individuals dedicated to sustainability
         </p>
       </div>
@@ -118,13 +116,11 @@ const Team = ({ displayToast }) => {
         />
       </div>
 
-      <div className="scale-125 h-1/6 text-white text-center space-y-5">
-        <h1 className="font-bold text-lg sm:text-3xl lg:text-4xl xl:text-5xl">
-          We&apos;re Hiring!
-        </h1>
+      <div className="scale-125 h-1/6 mt-5 text-white text-center space-y-5">
+        <h1 className="font-bold text-3xl">We&apos;re Hiring!</h1>
         <button
           onClick={() => displayToast()}
-          className="hover:outline-primary hover:scale-95 hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-8 md:py-4 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
+          className="hover:outline-primary hover:scale-95 hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-6 py-3 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
         >
           Contact
         </button>

@@ -31,9 +31,9 @@ const Products = ({ displayToast }) => {
   return (
     <div
       id="Products"
-      className="flex flex-col lg:flex-row h-[calc(100vh-4rem)] items-center w-full py-8 px-10"
+      className="flex flex-col lg:flex-row h-[calc(100vh-4rem)] items-center w-full py-8 px-8"
     >
-      <div className="scale-110 flex flex-col gap-3 lg:gap-7 justify-center h-1/3 lg:h-full p-10 sm:px-10 mb-5 lg:p-14 w-full lg:w-1/2 text-left">
+      <div className="scale-110 flex flex-col gap-3 lg:gap-7 justify-center h-1/3 lg:h-full p-4 sm:px-10 mb-5 lg:p-14 w-full lg:w-1/2 text-left">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
           Discover Our Eco-Friendly Products
         </h1>

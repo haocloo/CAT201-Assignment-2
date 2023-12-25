@@ -62,7 +62,7 @@ const FaQ = ({ displayToast }) => {
         </div>
       ))}
 
-      <div className="flex flex-row items-start mt-5 w-full ">
+      <div className="flex flex-row items-start my-5 w-full ">
         <div className="space-y-5">
           <h1 className="font-extrabold text-black text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
             Still have questions?

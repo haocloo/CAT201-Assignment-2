@@ -98,7 +98,8 @@ const Team = ({ displayToast }) => {
           description="Jia Liang brings creativity and innovation to our product design process."
           initialPos="translate-y-[67%] md:translate-y-[71%] lg:translate-y-[67%]"
           socmed={{
-            linkedin: "",
+            linkedin:
+              "https://www.linkedin.com/in/lim-jia-liang-km-pelajar-b9330725a/",
             github: "https://github.com/LIMJIALIANG",
             email: "limjialiang1067@student.usm.my",
           }}

@@ -51,7 +51,7 @@ export default function App() {
       <Header displayToast={displayToast} />
       <div className="scroll-smooth snap-y scroll-pt-16 snap-mandatory h-screen overflow-scroll overflow-x-hidden">
         {components.map((Component, index) => (
-          <div key={index} className="snap-start">
+          <div key={index} className="">
             <Component displayToast={displayToast} />
           </div>
         ))}

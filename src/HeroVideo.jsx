@@ -39,7 +39,7 @@ const HeroVideo = ({ displayToast }) => {
           WATCH VIDEO <i className="fa fa-play-circle h-5 w-5 ml-2"></i>
         </button>
         <dialog id="my_modal_2" className="modal">
-          <div className="modal-box h-full -space-y-16 mx-5 w-fit max-w-5xl grid place-items-center bg-gradient-to-r from-[#02285a] to-[#026f13]">
+          <div className="overflow-hidden modal-box h-full -space-y-16 mx-5 w-fit max-w-5xl grid place-items-center bg-gradient-to-r from-[#02285a] to-[#026f13]">
             <h3 className="font-bold text-3xl text-white mb-5">
               Welcome From CEO of Recyco
             </h3>

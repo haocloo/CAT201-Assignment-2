@@ -19,13 +19,10 @@ const Hero = ({ displayToast }) => {
         </p>
 
         <div className="flex flex-row gap-4 ">
-          <button className="px-6 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg">
+          <button className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg">
             <a href="#AboutUs">Discover</a>
           </button>
-          <button
-            onClick={() => displayToast()}
-            className="px-2 py-2 md:px-4 md:py-4 bg-secondary border border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
-          >
+          <button className="hover:outline-primary hover:font-bold hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-6 py-2 md:py-4 bg-secondary text-black rounded-lg text-xs md:text-sm lg:text-lg">
             Learn More
           </button>
         </div>

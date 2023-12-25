@@ -124,7 +124,7 @@ const Team = ({ displayToast }) => {
         </h1>
         <button
           onClick={() => displayToast()}
-          className="px-2 py-2 md:px-8 md:py-4 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
+          className="hover:outline-primary hover:scale-95 hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-8 md:py-4 bg-primary text-white font-bold rounded-lg text-xs md:text-sm lg:text-lg"
         >
           Contact
         </button>

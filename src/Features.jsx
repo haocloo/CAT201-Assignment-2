@@ -18,12 +18,12 @@ const Features = ({ handleClick }) => {
         </p>
 
         <div className="flex flex-row gap-4 ">
-          <button className="px-2 py-2 md:px-4 md:py-4 bg-secondary border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
+          <button className="hover:outline-primary hover:font-bold hover:border-secondary hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-2 py-2 md:px-4 md:py-4 bg-secondary border border-black text-black rounded-lg text-xs md:text-sm lg:text-lg">
             <a href="#Benefits">Learn More</a>
           </button>
           <button
             onClick={() => handleClick()}
-            className="px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:font-bold hover:scale-105 transition-all ease-in-out duration-300 px-2 py-2 space-x-4 md:px-4 md:py-4 text-black rounded-lg text-xs md:text-sm lg:text-lg"
           >
             <span>Sign Up</span>
             <i className="fa fa-chevron-right"></i>

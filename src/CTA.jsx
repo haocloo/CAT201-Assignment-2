@@ -18,13 +18,13 @@ const CTA = ({ displayToast }) => {
         <div className="flex flex-row gap-4 ">
           <button
             onClick={() => displayToast()}
-            className="px-12 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:outline-primary hover:font-bold hover:border-primary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-12 py-2 md:py-4 bg-primary text-white rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Join
           </button>
           <button
             onClick={() => displayToast()}
-            className="px-6 py-2 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:outline-primary hover:font-bold hover:border-secondary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-6 py-2 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Learn More
           </button>

@@ -14,13 +14,13 @@ const HeroVideo = ({ displayToast }) => {
         <p className="text-3xl font-medium">
           Transforming Waste into Sustainable Solutions
         </p>
-        <button className="hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] transition-all duration-300 ease-in text-xl font-bold w-52 h-14 mt-4 border border-white text-white rounded">
+        <button className="hover:outline-primary hover:scale-95 hover:outline hover:border-none outline-offset-4 hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] transition-all duration-300 ease-in text-xl font-bold w-52 h-14 mt-4 border border-white text-white rounded">
           <a href="#Hero">DISCOVER</a>
         </button>
 
         {/* Pop Up Window */}
         <button
-          className="btn hover:outline-[#029353] hover:outline outline-offset-4 hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] hover:text-white hover:border-none transition-all duration-300 ease-in text-lg font-bold w-52 h-14 bg-white text-black rounded"
+          className="btn hover:outline-primary hover:outline hover:scale-95 outline-offset-4 hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] hover:text-white hover:border-none transition-all duration-300 ease-in text-lg font-bold w-52 h-14 bg-white text-black rounded"
           onClick={() => document.getElementById("my_modal_2").showModal()}
         >
           WATCH VIDEO <i className="fa fa-play-circle h-5 w-5 ml-2"></i>

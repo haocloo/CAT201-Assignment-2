@@ -16,13 +16,13 @@ const Process = ({ displayToast }) => {
         <div className="flex flex-row gap-4">
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 md:px-4 md:py-4 border border-white rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:outline-primary hover:font-bold hover:border-[#024b36] hover:outline outline-offset-4 transition-all ease-in-out duration-300 px-2 py-2 md:px-4 md:py-4 border border-white rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Learn More
           </button>
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 space-x-4 md:px-4 md:py-4 rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:font-bold transition-all ease-in-out duration-300 px-2 py-2 space-x-4 md:px-4 md:py-4 rounded-lg text-xs md:text-sm lg:text-lg"
           >
             <span>Sign Up</span>
             <i className="fa fa-chevron-right"></i>

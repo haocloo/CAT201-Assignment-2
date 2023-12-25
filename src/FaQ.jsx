@@ -70,7 +70,7 @@ const FaQ = ({ displayToast }) => {
           <p>Contact us for more details</p>
           <button
             onClick={() => displayToast()}
-            className="px-2 py-2 md:px-4 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
+            className="hover:outline-primary hover:font-bold hover:border-secondary hover:outline outline-offset-4 transition-all ease-in-out duration-300  px-2 py-2 md:px-4 md:py-4 border bg-secondary border-black/50 text-black rounded-lg text-xs md:text-sm lg:text-lg"
           >
             Contact
           </button>

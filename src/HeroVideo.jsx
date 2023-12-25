@@ -1,7 +1,10 @@
 import video from "./assets/videos/HeroVideo.mp4";
 import CEOVideoVertical from "./assets/videos/CEOVideoVertical.mp4";
+import { useRef } from "react";
 
 const HeroVideo = ({ displayToast }) => {
+  const videoRef = useRef(null);
+
   return (
     <div
       id="HeroVideo"
@@ -21,7 +24,17 @@ const HeroVideo = ({ displayToast }) => {
         {/* Pop Up Window */}
         <button
           className="btn hover:outline-primary hover:outline hover:scale-95 outline-offset-4 hover:bg-gradient-to-r hover:from-[#02285a] hover:to-[#026f13] hover:text-white hover:border-none transition-all duration-300 ease-in text-lg font-bold w-52 h-14 bg-white text-black rounded"
-          onClick={() => document.getElementById("my_modal_2").showModal()}
+          onClick={() => {
+            const modal = document.getElementById("my_modal_2");
+            // play video when modal opens
+            modal.showModal();
+            videoRef.current.play();
+
+            // pause video when modal closes
+            modal.addEventListener("close", () => {
+              videoRef.current.pause();
+            });
+          }}
         >
           WATCH VIDEO <i className="fa fa-play-circle h-5 w-5 ml-2"></i>
         </button>
@@ -31,10 +44,11 @@ const HeroVideo = ({ displayToast }) => {
               Welcome From CEO of Recyco
             </h3>
             <video
+              ref={videoRef}
               src={CEOVideoVertical}
               type="video/mp4"
               className="object-cover h-[80%] rounded-xl"
-              autoPlay
+              controls
               loading="lazy"
             />
             <p className="py-4 text-white">
